@@ -17,7 +17,6 @@
         </q-toolbar>
       </q-header>
         <q-drawer
-          show-if-above
           overlay
           v-model="left"
           side="left"
