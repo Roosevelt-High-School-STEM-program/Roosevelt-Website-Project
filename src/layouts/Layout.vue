@@ -1,12 +1,12 @@
 <template>
   <div>
-    <q-layout view="hHh lpR fFf" class="bg-website-white">
+    <q-layout view="hHh lpR fFf" style="background-color: #424C55">
       <q-header
         elevated
-        class="bg-primary text-white"
+        class="text-white"
         height-hint="98"
       >
-        <q-toolbar class="bg-white text-dark">
+        <q-toolbar class=" text-white" style="background-color: #424C55">
           <q-toolbar-title >
             <!--            <q-avatar style="width:80px; height: 80px">-->
             <!--              <img src="../statics/HonoluluBakingCircle.png">-->
