@@ -7,7 +7,7 @@
       >
         <q-toolbar class="bg-white text-dark">
           <q-toolbar-title >
-            <q-avatar style="width:80px; height: 80px">
+            <q-avatar style="width:80px; height: 80px;">
               <img src="../statics/HonoluluBakingCircle.png">
             </q-avatar>
             Honolulu Baking Company
