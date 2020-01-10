@@ -1,16 +1,16 @@
 <template>
   <div>
-    <q-layout view="hHh lpR fFf" class="bg-website-white">
+    <q-layout class="bg-website-dark-blue" view="hHh lpR fFf">
       <q-header
         elevated
-        class="bg-primary text-white"
+        class="text-white"
         height-hint="98"
       >
-        <q-toolbar class="bg-white text-dark">
-          <q-toolbar-title >
-            <!--            <q-avatar style="width:80px; height: 80px">-->
-            <!--              <img src="../statics/HonoluluBakingCircle.png">-->
-            <!--            </q-avatar>-->
+        <q-toolbar
+          class="bg-website-dark-blue text-white"
+          style="font-family: Satisfy, cursive; height:20px"
+        >
+          <q-toolbar-title>
             Honolulu Baking Company
           </q-toolbar-title>
           <q-btn dense flat round class="float-left" icon="menu" @click="left = !left" />
@@ -24,7 +24,13 @@
           :breakpoint="200"
           elevated
         >
-          <q-tabs alight-left vertical>
+          <q-tabs
+            alight-left
+            vertical
+            class="bg-website-dark-blue text-white"
+            style="font-family: Satisfy, cursive;"
+
+          >
             <q-route-tab to="/page1" label="About Us" />
             <q-route-tab to="/page2" label="Contacts" />
             <q-route-tab to="/page3" label="Clients" />
