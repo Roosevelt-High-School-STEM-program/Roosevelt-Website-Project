@@ -29,8 +29,8 @@
               <div class="text-weight-bold">CLIENTS</div>
             </q-route-tab>
           </q-tabs>
-
         </q-toolbar>
+
       </q-header>
 
       <q-page-container>
