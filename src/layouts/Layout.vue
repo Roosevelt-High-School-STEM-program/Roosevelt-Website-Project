@@ -8,7 +8,7 @@
       >
         <q-toolbar
           class="bg-website-white text-dark"
-          style="font-family: Satisfy, cursive; height:20px"
+          style="font-family: Satisfy, cursive; height: 20px;"
         >
           <q-toolbar-title>
             Honolulu Baking Company
