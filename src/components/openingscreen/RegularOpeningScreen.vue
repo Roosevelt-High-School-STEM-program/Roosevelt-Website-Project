@@ -17,7 +17,7 @@
           style="background-color: rgba(255,255,255,0.3)"
         >
           <div class="col-md-4 q-mt-lg">
-            <img class="col-4" src="../../statics/HonoluluBakingCircle.png"/>
+            <img src="../../statics/HonoluluBakingCircle.png"/>
           </div>
         </div>
       </div>
