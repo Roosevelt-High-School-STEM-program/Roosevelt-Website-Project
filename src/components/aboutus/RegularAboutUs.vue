@@ -4,13 +4,13 @@
        class="col-md-12 row bg-website-white text-dark"
        style="height: 700px; font-family: Satisfy, cursive;"
      >
-       <div class="col-md-6 row justify-center">
-         <div class="col-md-4"></div>
-         <h1 class="col-md-4 text-weight-bold q-mb-none">
-           About
-         </h1>
-         <div class="col-md-4"></div>
-         <p class="col-md-8" style="font-size: 30px;">
+       <div class="col-md-6 text-center row justify-center">
+         <div class="col-md-12">
+           <h1 class="q-mt-lg text-weight-bold q-mb-none">
+             About
+           </h1>
+         </div>
+         <p class="col-md-8 q-mb-md" style="font-size: 30px;">
            Incredibly Inspiring words Incredibly Inspiring words Incredibly
            Inspiring words Incredibly
            Inspiring words Incredibly Inspiring words In Inspiring words
@@ -24,7 +24,7 @@
          class="col-md-6 row justify-center"
        >
          <q-img
-           class="q-ma-md float-right col-md rounded-borders"
+           class="float-right q-ma-lg col-md rounded-borders"
            src="../../statics/pastry.jpg"
            style="max-width: 650px;"
            :ratio="1" />
