@@ -3,7 +3,7 @@
     <regular-opening-screen />
     <regular-about-us />
     <regular-workers-screen />
-    <regular-contact-us />
+    <regular-contact-us id="gay"/>
   </q-page>
 </template>
 
