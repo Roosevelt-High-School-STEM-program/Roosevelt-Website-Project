@@ -7,39 +7,41 @@
       >
         <q-toolbar
           class="text-dark"
-          style="font-family: Satisfy, cursive; height: 20px;"
+          style="font-family: 'Alegreya Sans SC', sans-serif; height: 20px;"
         >
-          <q-toolbar-title>
-            Honolulu Baking Company
-          </q-toolbar-title>
-<!--          <q-tabs-->
-<!--            alight-left-->
-<!--            class="text-dark"-->
-<!--            style="font-family: Satisfy, cursive;"-->
-
-<!--          >-->
-            <q-btn @click="teleport('#about-us')" name="hello">ABOUT US</q-btn>
-          <q-btn @click="teleport('#ohana')" name="hello">OHANA</q-btn>
-            <q-btn @click="teleport('#contact-us')" name="hello">CONTACT</q-btn>
-<!--            <q-route-tab name="About Us" onclick="teleport()">-->
-<!--              <div class="text-weight-bold">ABOUT US</div>-->
-<!--            </q-route-tab>-->
-<!--            <q-route-tab to="/page2" name="Contacts">-->
-<!--              <div class="text-weight-bold">CONTACTS</div>-->
-<!--            </q-route-tab>-->
-<!--            <q-route-tab to="/page3" name="Clients">-->
-<!--              <div class="text-weight-bold">CLIENTS</div>-->
-<!--            </q-route-tab>-->
-<!--          </q-tabs>-->
+          <div class="col-12 float-right">
+            <q-btn
+              flat
+              class="q-pa-sm float-right q-ml-md"
+              @click="teleport('#about-us')"
+              name="hello"
+            >
+              ABOUT US
+            </q-btn>
+            <q-btn
+              flat
+              class="float-right q-pa-sm q-ml-md"
+              @click="teleport('#ohana')"
+              name="hello"
+            >
+              OHANA
+            </q-btn>
+            <q-btn
+              flat
+              class="float-right q-pa-sm q-ml-md"
+              @click="teleport('#contact-us')"
+              name="hello"
+            >
+              CONTACT
+            </q-btn>
+          </div>
         </q-toolbar>
 
       </q-header>
-      <q-page-container>
         <regular-opening-screen />
         <regular-about-us id="about-us" />
         <regular-workers-screen id="ohana"/>
         <regular-contact-us id="contact-us" />
-      </q-page-container>
     </q-layout>
   </div>
 </template>
