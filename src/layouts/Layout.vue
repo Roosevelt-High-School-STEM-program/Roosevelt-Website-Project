@@ -13,10 +13,10 @@
             <q-btn
               flat
               class="q-pa-sm float-right q-ml-md"
-              @click="teleport('#about-us')"
+              @click="teleport('#about')"
               name="hello"
             >
-              ABOUT US
+              ABOUT
             </q-btn>
             <q-btn
               flat
@@ -39,7 +39,7 @@
 
       </q-header>
         <regular-opening-screen />
-        <regular-about-us id="about-us" />
+        <regular-about-us id="about" />
         <regular-workers-screen id="ohana"/>
         <regular-contact-us id="contact-us" />
     </q-layout>
