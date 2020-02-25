@@ -4,7 +4,7 @@
     style="border-top:2px solid black;"
   >
     <div
-      class="row col-md-12 justify-center q-my-none bg-website-white"
+      class="row col-md-12 justify-center q-my-none bg-website-gray"
       style="height: 325px;"
     >
       <div class="row col-md-12 text-center text-dark">

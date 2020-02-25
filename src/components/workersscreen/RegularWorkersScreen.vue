@@ -1,18 +1,20 @@
 <template>
-  <div class="row justify-center bg-website-white" style="height: 1910px;">
-    <div class="col-md-3"></div>
-    <q-img class="col-md-6" src="../../statics/ohana.png"></q-img>
-    <div class="col-md-3"></div>
-    <div class="col-md-2" />
-    <q-img class="col-md-8" :ratio="16/9" src="../../statics/groupPic.jpeg"/>
-    <div class="col-md-2" />
+  <div class="row justify-center bg-website-white" style="height: 1920px;">
+    <div class="col-md-3" />
+    <div class="col-md-6">
+      <q-img src="../../statics/ohana.png" />
+    </div>
+    <div class="col-md-3" />
+    <q-img class="col-md-6" :ratio="16/9" src="../../statics/groupPic.jpeg"/>
+    <div class="col-md-6" />
+    <div class="col-md-12"></div>
     <div class="col-md-1" />
     <div
       class="row col-md-10 justify-center"
       style="font-size: 24px; font-family: Satisfy, cursive;"
     >
       <div
-        class="col-md-9 q-mt-md row items-center bg-website-mustard-yellow"
+        class="col-md-9 q-mt-md row items-center bg-website-gray"
         style="border-radius: 200px 0px 0px 200px; height: 300px"
       >
         <q-img
@@ -27,9 +29,16 @@
           This worker is incredible. I'm truly amazed by their performance.
         </p>
       </div>
-
+      <div class="column items-center">
+        <div
+          class="col-md-1 q-mt-md top-triangle"
+        />
+        <div
+          class="col-md-1 bottom-triangle"
+        />
+      </div>
       <div
-        class="col-md-9 q-mt-md row items-center bg-website-mustard-yellow"
+        class="col-md-9 q-mt-md row items-center bg-website-gray"
         style="border-radius: 200px 0px 0px 200px; height: 300px"
       >
         <q-img
@@ -44,9 +53,27 @@
           This worker is incredible. I'm truly amazed by their performance.
         </p>
       </div>
+      <div class="column items-center">
+        <div
+          class="col-md-1 q-mt-md top-triangle"
+        />
+        <div
+          class="col-md-1 bottom-triangle"
+        />
+      </div>
       <div
-        class="col-md-9 q-my-md row items-center bg-website-mustard-yellow"
-      style="border-radius: 200px 0px 0px 200px; height: 300px"
+        class="col-md-9 q-my-md row items-center bg-website-gray"
+        style="
+          border-radius: 200px 0px 0px 200px;
+          height: 300px;
+          -webkit-clip-path: polygon(
+              0% 0%,
+              100% 0%,
+              90% 50%,
+              100% 100%,
+              0% 100%
+          );
+          "
       >
         <q-img
           class="col-2"
@@ -60,10 +87,19 @@
           This worker is incredible. I'm truly amazed by their performance.
         </p>
       </div>
+      <div class="column items-center">
+        <div
+          class="col-md-1 q-mt-md top-triangle"
+        />
+        <div
+          class="col-md-1 bottom-triangle"
+        />
+      </div>
     </div>
     <div class="col-md-1" />
-    <div class="col-md-12"></div>
+    <div class="col-md-12" />
   </div>
+
 </template>
 
 <script>
@@ -75,4 +111,3 @@ export default {
 <style scoped>
 
 </style>
-s

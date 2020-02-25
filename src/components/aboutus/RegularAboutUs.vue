@@ -6,7 +6,9 @@
      >
        <div class="col-md-6 text-center row justify-center">
          <div class="col-md-12">
-           <h1 class="q-mt-lg text-weight-bold q-mb-none">
+           <h1
+             class="q-mt-lg text-weight-bold q-mb-none"
+           >
              About
            </h1>
          </div>
@@ -25,7 +27,7 @@
        >
          <q-img
            class="float-right q-ma-lg col-md rounded-borders"
-           src="../../statics/pastry.jpg"
+           src="../../statics/food-pictures/pastry.jpg"
            style="max-width: 650px;"
            :ratio="1" />
        </div>
