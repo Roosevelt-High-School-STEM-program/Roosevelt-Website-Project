@@ -12,27 +12,27 @@
           <div class="col-md-6"></div>
           <div class="col-md-6 row justify-end text-website-light-brown">
             <q-btn
-              style="letter-spacing: 3px; font-size: 16px"
+              style="letter-spacing: 3px; font-size: 15px"
               flat
-              class="col-md-2 q-pa-sm q-ml-md"
+              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
               @click="teleport('#about')"
               name="hello"
             >
               ABOUT
             </q-btn>
             <q-btn
-              style="letter-spacing: 3px; font-size: 16px"
+              style="letter-spacing: 3px; font-size: 15px"
               flat
-              class="col-md-2 q-pa-sm q-ml-md"
+              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
               @click="teleport('#ohana')"
               name="hello"
             >
               OHANA
             </q-btn>
             <q-btn
-              style="letter-spacing: 3px; font-size: 16px"
+              style="letter-spacing: 3px; font-size: 15px"
               flat
-              class="col-md-2 q-pa-sm q-ml-md"
+              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
               @click="teleport('#contact-us')"
               name="hello"
             >
@@ -44,6 +44,7 @@
       </q-header>
         <regular-opening-screen />
         <regular-about id="about"/>
+        <regular-about-pictures />
         <regular-workers-screen id="ohana"/>
         <regular-contact-us id="contact-us" />
     </q-layout>
@@ -55,11 +56,16 @@ import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScre
 import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
 import RegularContactUs from '../components/contactus/RegularContactUs';
 import RegularAbout from '../components/aboutus/RegularAbout';
+import RegularAboutPictures from '../components/aboutus/RegularAboutPictures';
 
 export default {
   name: 'Layout',
   components: {
-    RegularAbout, RegularContactUs, RegularWorkersScreen, RegularOpeningScreen,
+    RegularAboutPictures,
+    RegularAbout,
+    RegularContactUs,
+    RegularWorkersScreen,
+    RegularOpeningScreen,
   },
   data() {
     return {

@@ -1,13 +1,28 @@
 <template>
   <div class="row justify-center bg-website-white" style="height: 1920px;">
-    <div class="col-md-3" />
-    <div class="col-md-6">
-      <q-img src="../../statics/ohana.png" />
+    <div class="row justify-center items-center col-md-12">
+      <div class="col-md-3" />
+      <div class="col-md-6">
+        <q-img src="../../statics/ohana.png" />
+      </div>
+      <div class="col-md-3" />
+      <div class="row col-md-6">
+        <q-img class="col-md-12" :ratio="16/9" src="../../statics/groupPic.jpeg"/>
+      </div>
+      <div class="col-md-4 text-center q-ml-lg">
+        <p style="font-family: 'Anaheim'; line-height: 25px;">
+          It is a long established fact that a reader will be distracted by the readable
+          content of a page when looking at its layout. The point of using Lorem Ipsum
+          is that it has a more-or-less normal distribution of letters, as opposed to using
+          'Content here, content here', making it look like readable English. Many desktop
+          publishing packages and web page editors now use Lorem Ipsum as their default model
+          text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+          Various versions have evolved over the years, sometimes by accident, sometimes on
+        </p>
+      </div>
     </div>
-    <div class="col-md-3" />
-    <q-img class="col-md-6" :ratio="16/9" src="../../statics/groupPic.jpeg"/>
-    <div class="col-md-6" />
-    <div class="col-md-12"></div>
+
+    <div class="col-md-12" />
     <div class="col-md-1" />
     <div
       class="row col-md-10 justify-center"
@@ -30,12 +45,8 @@
         </p>
       </div>
       <div class="column items-center">
-        <div
-          class="col-md-1 q-mt-md top-triangle"
-        />
-        <div
-          class="col-md-1 bottom-triangle"
-        />
+        <div class="col-md-1 q-mt-md top-triangle"/>
+        <div class="col-md-1 bottom-triangle" />
       </div>
       <div
         class="col-md-9 q-mt-md row items-center bg-website-gray"
@@ -54,12 +65,8 @@
         </p>
       </div>
       <div class="column items-center">
-        <div
-          class="col-md-1 q-mt-md top-triangle"
-        />
-        <div
-          class="col-md-1 bottom-triangle"
-        />
+        <div class="col-md-1 q-mt-md top-triangle"/>
+        <div class="col-md-1 bottom-triangle" />
       </div>
       <div
         class="col-md-9 q-my-md row items-center bg-website-gray"
@@ -88,12 +95,8 @@
         </p>
       </div>
       <div class="column items-center">
-        <div
-          class="col-md-1 q-mt-md top-triangle"
-        />
-        <div
-          class="col-md-1 bottom-triangle"
-        />
+        <div class="col-md-1 q-mt-md top-triangle"/>
+        <div class="col-md-1 bottom-triangle" />
       </div>
     </div>
     <div class="col-md-1" />
