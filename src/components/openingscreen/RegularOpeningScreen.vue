@@ -1,25 +1,25 @@
 <template>
   <div class="row">
-    <div class="col-md-12 column" style="height:710px">
+    <div class="col-md-12 column" style="height:800px">
       <!-- Note is that the box is not resizing because
        the background is taking up 100% of the page -->
       <div
         class="col-md-12 row"
-        style="
-        background-image: url('../../statics/oatMealCake.jpg');
-        background-size: 100%;
-        min-height:100%;
-        font-family: Satisfy, cursive;
-        "
+        id="front-page-image"
       >
         <div
-          class="col-md-12 row justify-center"
-          style="background-color: rgba(255,255,255,0.3)"
+          class="col-md-12 row items-center"
+          style="background-color: rgba(0, 0, 0, 0.6);"
         >
-          <div class="col-md-4 q-mt-lg">
+          <div class="col-md-12" />
+          <div class="col-md-4" />
+          <div class="col-md-4" >
             <q-img src="../../statics/HonoluluBakingCircle.png"/>
           </div>
+          <div class="col-md-12" />
+          <div class="col-md-12" />
         </div>
+
       </div>
     </div>
   </div>

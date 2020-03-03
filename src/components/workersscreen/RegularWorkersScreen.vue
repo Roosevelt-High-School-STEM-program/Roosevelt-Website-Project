@@ -1,80 +1,121 @@
 <template>
-  <div class="row justify-center bg-website-white" style="height: 1865px;">
-    <h1
-      class="col-12 text-center text-bold q-mt-lg"
-      style="font-family: Satisfy, cursive;"
-    >
-      The Ohana
-    </h1>
-    <div class="col-md-1" />
-    <q-img class="col-md-10" :ratio="16/9" src="../../statics/pastry.jpg"/>
-    <div class="col-md-1" />
-    <div class="col-md-1" />
-    <div class="row col-md-10" style="font-size: 25px; font-family: Satisfy, cursive;">
-      <div
-        class="col-md-12 q-mt-md row items-center bg-website-mustard-yellow"
-        style="border-radius: 200px 0px 0px 200px"
-      >
-        <q-img
-          class="col-2"
-          style="width: 300px; height: 300px; border-radius: 50%;"
-          src="../../statics/pastry.jpg"
-        />
-        <p class="col-md-9 q-ml-md text-center">
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-        </p>
+  <div class="row justify-center bg-website-white" style="height: 1920px;">
+    <div class="row justify-center items-center col-md-12">
+      <div class="col-md-3" />
+      <div class="col-md-6">
+        <q-img src="../../statics/ohana.png" />
       </div>
-
-      <div
-        class="col-md-12 q-mt-md row items-center bg-website-mustard-yellow"
-        style="border-radius: 200px 0px 0px 200px;"
-      >
+      <div class="col-md-3" />
+      <div class="col-md-6">
         <q-img
-          class="col-2"
-          style="width: 300px; height: 300px; border-radius: 50%;"
-          src="../../statics/pastry.jpg"
+          style="background-position: center;  box-shadow: 5px 5px 5px grey;"
+          :ratio="870/506"
+          src="../../statics/groupPic.jpeg"
         />
-        <p class="col-md-9 q-ml-md" >
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-        </p>
       </div>
-      <div
-        class="col-md-12 q-my-md row items-center bg-website-mustard-yellow"
-        style="border-radius: 200px 0px 0px 200px"
-      >
-        <q-img
-          class="col-2"
-          style="width: 300px; height: 300px; border-radius: 50%;"
-          src="../../statics/pastry.jpg"
-        />
-        <p class="col-md-9 q-ml-md" >
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
+      <div class="col-md-1"></div>
+      <div class="col-md-3 text-center q-ml-lg">
+        <p style="font-family: 'Anaheim'; line-height: 30px;">
+          It is a long established fact that a reader will be distracted by the readable
+          content of a page when looking at its layout. The point of using Lorem Ipsum
+          is that it has a more-or-less normal distribution of letters, as opposed to using
+          'Content here, content here', making it look like readable English. Many desktop
+          publishing packages and web page editors now use Lorem Ipsum as their default model
+          text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+          Various versions have evolved over the years, sometimes by accident, sometimes on
         </p>
       </div>
     </div>
+
+    <div class="col-md-12" />
     <div class="col-md-1" />
+    <div
+      class="row col-md-10 justify-center"
+      style="font-size: 24px; font-family: Satisfy, cursive;"
+    >
+      <div
+        class="col-md-9 q-mt-md row items-center bg-website-gray"
+        style="border-radius: 200px 0px 0px 200px; height: 300px"
+      >
+        <q-img
+          class="col-2"
+          style="width: 300px; height: 300px; border-radius: 50%;"
+          src="../../statics/worker-1.jpeg"
+        />
+        <p class="col-md-7 q-ml-md text-center">
+          This worker is incredible. I'm truly amazed by their performance.
+          This worker is incredible. I'm truly amazed by their performance.
+          This worker is incredible. I'm truly amazed by their performance.
+          This worker is incredible. I'm truly amazed by their performance.
+        </p>
+      </div>
+      <div class="column items-center">
+        <div class="col-md-1 q-mt-md top-triangle"/>
+        <div class="col-md-1 bottom-triangle" />
+      </div>
+      <div
+        class="col-md-9 q-mt-md row items-center bg-website-gray"
+        style="border-radius: 200px 0px 0px 200px; height: 300px"
+      >
+        <q-img
+          class="col-2"
+          style="width: 300px; height: 300px; border-radius: 50%;"
+          src="../../statics/worker-2.jpeg"
+        />
+        <p class="col-md-7 q-ml-md" >
+          This worker is incredible. I'm truly amazed by their performance.
+          This worker is incredible. I'm truly amazed by their performance.
+          This worker is incredible. I'm truly amazed by their performance.
+          This worker is incredible. I'm truly amazed by their performance.
+        </p>
+      </div>
+      <div class="column items-center">
+        <div class="col-md-1 q-mt-md top-triangle"/>
+        <div class="col-md-1 bottom-triangle" />
+      </div>
+      <div
+        class="col-md-9 q-my-md row items-center bg-website-gray"
+        style="
+          border-radius: 200px 0px 0px 200px;
+          height: 300px;
+          "
+      >
+        <q-img
+          class="col-2"
+          style="width: 300px; height: 300px; border-radius: 50%;"
+          src="../../statics/worker-3.jpeg"
+        />
+        <p class="col-md-7 q-ml-md" >
+          This worker is incredible. I'm truly amazed by their performance.
+          This worker is incredible. I'm truly amazed by their performance.
+          This worker is incredible. I'm truly amazed by their performance.
+          This worker is incredible. I'm truly amazed by their performance.
+        </p>
+      </div>
+      <div class="column items-center">
+        <div class="col-md-1 q-mt-md top-triangle"/>
+        <div class="col-md-1 bottom-triangle" />
+      </div>
+    </div>
+    <div class="col-md-1" />
+    <div class="col-md-12" />
   </div>
+
 </template>
 
 <script>
 export default {
   name: 'RegularWorkersScreen',
+  data() {
+  },
+  methods: {
+    floatingImages() {
+
+    },
+  },
 };
 </script>
 
 <style scoped>
 
 </style>
-s

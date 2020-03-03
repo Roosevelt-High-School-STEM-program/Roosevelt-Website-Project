@@ -7,28 +7,32 @@
       >
         <q-toolbar
           class="text-dark"
-          style="font-family: 'Alegreya Sans SC', sans-serif; height: 20px;"
+          style="font-family: Alegreya Sans SC; height: 20px;"
         >
-          <div class="col-12 float-right">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 row justify-end text-website-light-brown">
             <q-btn
+              style="letter-spacing: 3px; font-size: 15px"
               flat
-              class="q-pa-sm float-right q-ml-md"
-              @click="teleport('#about-us')"
+              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
+              @click="teleport('#about')"
               name="hello"
             >
-              ABOUT US
+              ABOUT
             </q-btn>
             <q-btn
+              style="letter-spacing: 3px; font-size: 15px"
               flat
-              class="float-right q-pa-sm q-ml-md"
+              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
               @click="teleport('#ohana')"
               name="hello"
             >
               OHANA
             </q-btn>
             <q-btn
+              style="letter-spacing: 3px; font-size: 15px"
               flat
-              class="float-right q-pa-sm q-ml-md"
+              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
               @click="teleport('#contact-us')"
               name="hello"
             >
@@ -39,7 +43,8 @@
 
       </q-header>
         <regular-opening-screen />
-        <regular-about-us id="about-us" />
+        <regular-about id="about"/>
+        <regular-about-pictures />
         <regular-workers-screen id="ohana"/>
         <regular-contact-us id="contact-us" />
     </q-layout>
@@ -47,15 +52,20 @@
 </template>
 
 <script>
-import RegularAboutUs from '../components/aboutus/RegularAboutUs';
 import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
 import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
 import RegularContactUs from '../components/contactus/RegularContactUs';
+import RegularAbout from '../components/aboutus/RegularAbout';
+import RegularAboutPictures from '../components/aboutus/RegularAboutPictures';
 
 export default {
   name: 'Layout',
   components: {
-    RegularContactUs, RegularWorkersScreen, RegularOpeningScreen, RegularAboutUs,
+    RegularAboutPictures,
+    RegularAbout,
+    RegularContactUs,
+    RegularWorkersScreen,
+    RegularOpeningScreen,
   },
   data() {
     return {
