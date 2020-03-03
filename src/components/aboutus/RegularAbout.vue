@@ -1,5 +1,5 @@
 <template>
-  <div class="row" style="height:800px;">
+  <div class="row bg-website-white" style="height:800px;">
     <div class="row justify-center items-center col-md-12 ">
       <div class="col-md-1 q-mt-none" />
         <div
@@ -28,37 +28,52 @@
         <div class="col-md-2" />
         <div class="row col-md-4">
           <q-img
-            class="col-md-12"
+            class="float-image"
             style="max-width:320px"
             src="../../statics/food-pictures/oatCakeTopDown.png"
           />
       </div>
     </div>
-    <div class="row justify-center items-center col-md-12">
+    <div
+      class="row col-md-12"
+      style="
+      background-image: url('../../statics/food-pictures/oatMeatSpreadOut.JPG');
+      background-size:cover;
+      background-color: rgba(0, 0, 0, 0.6);"
+    >
       <div
-        class="row justify-center col-md-3 text-center"
-        style="letter-spacing: 3px;"
+        class="row justify-center items-center col-md-12"
+        style="background-color: rgba(56, 41, 19, 0.6);"
       >
-          <p style="font-size: 25px; font-family: Alegreya Sans SC; text-align: center">
+      <div
+        class="row justify-center col-md-4 text-center"
+        style="letter-spacing: 2px;"
+      >
+          <p
+            class="text-weight-bold"
+            style="font-size: 33px;
+            font-family: Alegreya Sans SC;
+            text-align: center;
+            color: #DE4444"
+        >
           Here at Honolulu
             <br>
             Baking Company, We are
           </p>
       </div>
       <div class="col-md-1" />
-      <div class="col-md-2">
+      <div class="col-md-3">
         <q-img
-          class="col-md-6"
           style="max-width: 120px;"
           src="../../statics/cert/USDA&FDA.png"
         />
       </div>
-      <div class="col-md-2">
+      <div class="col-md-3">
         <q-img
-          class="col-md-6"
-          style="max-width: 300px;"
+          style="max-width: 270px;"
           src="../../statics/cert/Military&state&SQF2.png"
         />
+      </div>
       </div>
     </div>
   </div>

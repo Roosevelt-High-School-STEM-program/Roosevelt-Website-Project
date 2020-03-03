@@ -6,11 +6,16 @@
         <q-img src="../../statics/ohana.png" />
       </div>
       <div class="col-md-3" />
-      <div class="row col-md-6">
-        <q-img class="col-md-12" :ratio="16/9" src="../../statics/groupPic.jpeg"/>
+      <div class="col-md-6">
+        <q-img
+          style="background-position: center;  box-shadow: 5px 5px 5px grey;"
+          :ratio="870/506"
+          src="../../statics/groupPic.jpeg"
+        />
       </div>
-      <div class="col-md-4 text-center q-ml-lg">
-        <p style="font-family: 'Anaheim'; line-height: 25px;">
+      <div class="col-md-1"></div>
+      <div class="col-md-3 text-center q-ml-lg">
+        <p style="font-family: 'Anaheim'; line-height: 30px;">
           It is a long established fact that a reader will be distracted by the readable
           content of a page when looking at its layout. The point of using Lorem Ipsum
           is that it has a more-or-less normal distribution of letters, as opposed to using
@@ -73,13 +78,6 @@
         style="
           border-radius: 200px 0px 0px 200px;
           height: 300px;
-          -webkit-clip-path: polygon(
-              0% 0%,
-              100% 0%,
-              90% 50%,
-              100% 100%,
-              0% 100%
-          );
           "
       >
         <q-img
@@ -108,6 +106,13 @@
 <script>
 export default {
   name: 'RegularWorkersScreen',
+  data() {
+  },
+  methods: {
+    floatingImages() {
+
+    },
+  },
 };
 </script>
 
