@@ -4,12 +4,19 @@
     style="border-top:2px solid black;"
   >
     <div
-      class="row col-md-12 justify-center q-my-none bg-website-gray"
+      class="row col-md-12 justify-center q-my-none bg-website-white"
       style="height: 325px;"
     >
-      <div class="row col-md-12 text-center text-dark">
+      <div
+        class="col-md-12"
+        style="
+      background-image: url('../../statics/people-photos/salad.JPG');
+      background-size: cover; background-position: center"
+      />
+      <div class="row col-md-12 text-center text-black">
+        <div class="col-md-12" />
         <div class="col-md-12 q-my-none" style=" font-family: Satisfy, cursive;">
-          <h1 class="q-mb-sm">Contact Info</h1>
+          <h1 class="q-my-sm">Contact Info</h1>
         </div>
         <div class="col-md-1"/>
         <div class="col-md-5">

@@ -10,7 +10,7 @@
         <q-img
           style="background-position: center;  box-shadow: 5px 5px 5px grey;"
           :ratio="870/506"
-          src="../../statics/groupPic.jpeg"
+          src="../../statics/people-photos/groupPic.jpeg"
         />
       </div>
       <div class="col-md-1"></div>
@@ -40,7 +40,7 @@
         <q-img
           class="col-2"
           style="width: 300px; height: 300px; border-radius: 50%;"
-          src="../../statics/worker-1.jpeg"
+          src="../../statics/people-photos/worker-1.jpeg"
         />
         <p class="col-md-7 q-ml-md text-center">
           This worker is incredible. I'm truly amazed by their performance.
@@ -60,7 +60,7 @@
         <q-img
           class="col-2"
           style="width: 300px; height: 300px; border-radius: 50%;"
-          src="../../statics/worker-2.jpeg"
+          src="../../statics/people-photos/worker-2.jpeg"
         />
         <p class="col-md-7 q-ml-md" >
           This worker is incredible. I'm truly amazed by their performance.
@@ -83,7 +83,7 @@
         <q-img
           class="col-2"
           style="width: 300px; height: 300px; border-radius: 50%;"
-          src="../../statics/worker-3.jpeg"
+          src="../../statics/people-photos/worker-3.jpeg"
         />
         <p class="col-md-7 q-ml-md" >
           This worker is incredible. I'm truly amazed by their performance.
