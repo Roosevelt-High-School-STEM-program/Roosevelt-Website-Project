@@ -13,7 +13,7 @@
           src="../../statics/groupPic.jpeg"
         />
       </div>
-      <div class="col-md-1"></div>
+      <div class="col-md-1" />
       <div class="col-md-3 text-center q-ml-lg">
         <p style="font-family: 'Anaheim'; line-height: 30px;">
           It is a long established fact that a reader will be distracted by the readable
@@ -31,23 +31,39 @@
     <div class="col-md-1" />
     <div
       class="row col-md-10 justify-center"
-      style="font-size: 24px; font-family: Satisfy, cursive;"
+      style="font-family: Alegreya Sans SC;"
     >
       <div
         class="col-md-9 q-mt-md row items-center bg-website-gray"
-        style="border-radius: 200px 0px 0px 200px; height: 300px"
+        style="border-radius: 200px 0px 0px 200px; height: 300px;"
       >
         <q-img
           class="col-2"
-          style="width: 300px; height: 300px; border-radius: 50%;"
+          style="width: 300px; height: 300px; border-radius: 50%; border:solid 3px black"
           src="../../statics/worker-1.jpeg"
         />
-        <p class="col-md-7 q-ml-md text-center">
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-        </p>
+          <div class="column col-md-7" style="height:300px">
+            <div class="col-md-3">
+              <h1
+                class="q-my-none q-ml-md text-weight-bolder text-center"
+                style="font-size: 32px"
+              >
+                Worker
+              </h1>
+            </div>
+            <div class="col-md-5">
+              <p
+                class="col-md-5 q-ml-md q-my-none q-ml-md"
+                style="font-size: 19px; font-family: Inter;"
+              >
+                This worker is incredible. I'm truly amazed by their performance.
+                This worker is incredible. I'm truly amazed by their performance. LIke truly wow
+                This worker is incredible. I'm truly amazed by their performance.
+                This worker is incredible. I'm truly amazed by their performance.
+              </p>
+            </div >
+        </div>
+
       </div>
       <div class="column items-center">
         <div class="col-md-1 q-mt-md top-triangle"/>
@@ -55,19 +71,34 @@
       </div>
       <div
         class="col-md-9 q-mt-md row items-center bg-website-gray"
-        style="border-radius: 200px 0px 0px 200px; height: 300px"
+        style="border-radius: 200px 0px 0px 200px; height: 300px;"
       >
         <q-img
           class="col-2"
-          style="width: 300px; height: 300px; border-radius: 50%;"
+          style="width: 300px; height: 300px; border-radius: 50%; border: solid 3px black"
           src="../../statics/worker-2.jpeg"
         />
-        <p class="col-md-7 q-ml-md" >
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-        </p>
+        <div class="column col-md-7" style="height:300px">
+          <div class="col-md-3">
+            <h1
+              class="q-my-none q-ml-md text-weight-bolder text-center"
+              style="font-size: 32px"
+            >
+              Worker
+            </h1>
+          </div>
+          <div class="col-md-5">
+            <p
+              class="col-md-5 q-ml-md q-my-none q-ml-md"
+              style="font-size: 19px; font-family: Inter;"
+            >
+              This worker is incredible. I'm truly amazed by their performance.
+              This worker is incredible. I'm truly amazed by their performance. LIke truly wow
+              This worker is incredible. I'm truly amazed by their performance.
+              This worker is incredible. I'm truly amazed by their performance.
+            </p>
+          </div >
+        </div>
       </div>
       <div class="column items-center">
         <div class="col-md-1 q-mt-md top-triangle"/>
@@ -75,25 +106,37 @@
       </div>
       <div
         class="col-md-9 q-my-md row items-center bg-website-gray"
-        style="
-          border-radius: 200px 0px 0px 200px;
-          height: 300px;
-          "
+        style="border-radius: 200px 0px 0px 200px; height: 300px;"
       >
         <q-img
           class="col-2"
-          style="width: 300px; height: 300px; border-radius: 50%;"
+          style="width: 300px; height: 300px; border-radius: 50%; border:solid 3px black"
           src="../../statics/worker-3.jpeg"
         />
-        <p class="col-md-7 q-ml-md" >
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-          This worker is incredible. I'm truly amazed by their performance.
-        </p>
+        <div class="column col-md-7" style="height:300px">
+          <div class="col-md-3">
+            <h1
+              class="q-my-none q-ml-md text-weight-bolder text-center"
+              style="font-size: 32px"
+            >
+              Worker
+            </h1>
+          </div>
+          <div class="col-md-5">
+            <p
+              class="col-md-5 q-ml-md q-my-none q-ml-md"
+              style="font-size: 19px; font-family: Inter;"
+            >
+              This worker is incredible. I'm truly amazed by their performance.
+              This worker is incredible. I'm truly amazed by their performance. LIke truly wow
+              This worker is incredible. I'm truly amazed by their performance.
+              This worker is incredible. I'm truly amazed by their performance.
+            </p>
+          </div >
+        </div>
       </div>
       <div class="column items-center">
-        <div class="col-md-1 q-mt-md top-triangle"/>
+        <div class="col-md-1 q-mt-md top-triangle" />
         <div class="col-md-1 bottom-triangle" />
       </div>
     </div>
