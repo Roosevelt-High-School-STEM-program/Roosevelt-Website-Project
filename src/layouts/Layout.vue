@@ -43,6 +43,7 @@
 
       </q-header>
         <regular-opening-screen />
+        <regular-three-client-page />
         <regular-about id="about"/>
         <regular-about-pictures />
         <regular-workers-screen id="ohana"/>
@@ -52,6 +53,7 @@
 </template>
 
 <script>
+import RegularThreeClientPage from '../components/threeclientpage/RegularThreeClientPage';
 import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
 import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
 import RegularContactUs from '../components/contactus/RegularContactUs';
@@ -61,6 +63,7 @@ import RegularAboutPictures from '../components/aboutus/RegularAboutPictures';
 export default {
   name: 'Layout',
   components: {
+    RegularThreeClientPage,
     RegularAboutPictures,
     RegularAbout,
     RegularContactUs,
