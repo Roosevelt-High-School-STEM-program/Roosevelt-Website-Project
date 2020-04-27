@@ -57,14 +57,12 @@ import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScre
 import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
 import RegularContactUs from '../components/contactus/RegularContactUs';
 import RegularAbout from '../components/aboutus/RegularAbout';
-import RegularAboutPictures from '../components/aboutus/RegularAboutPictures';
 import RegularContactUsPictures from '../components/contactus/RegularContactUsPictures';
 
 export default {
   name: 'Layout',
   components: {
     RegularContactUsPictures,
-    RegularAboutPictures,
     RegularAbout,
     RegularContactUs,
     RegularWorkersScreen,

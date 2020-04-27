@@ -1,36 +1,56 @@
 <template>
   <div
     class="row"
-    style="border-top:2px solid black;"
+    style="
+      background-image: url('../../statics/food-pictures/oatmeal.jpg');
+      background-size:cover;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #DE4444"
   >
     <div
       class="row col-md-12 justify-center q-my-none bg-website-white"
-      style="height: 325px;"
+      style="height: 325px; background-color: rgba(56, 41, 19, 0.7);"
     >
-      <div
-        class="col-md-12"
-        style="
-      background-image: url('../../statics/people-photos/salad.JPG');
-      background-size: cover; background-position: center"
-      />
-      <div class="row col-md-12 text-center text-black">
+      <div class="col-md-12 row justify-center text-center">
         <div class="col-md-12" />
-        <div class="col-md-12 q-my-none" style=" font-family: Satisfy, cursive;">
-          <h1 class="q-my-sm">Contact Info</h1>
+        <div class="col-md-12 q-my-none">
+          <h1
+            class="q-my-sm text-weight-bold"
+            style="font-family: Alegreya Sans SC; letter-spacing: 2px;"
+          >
+            CONTACT INFO
+          </h1>
         </div>
-        <div class="col-md-1"/>
-        <div class="col-md-5">
-          <p class="q-ma-sm text-weight-light">Address</p>
-          <p class="q-ma-sm text-weight-bold">523 Ahui St, Honolulu, HI 96813</p>
-          <p class="q-ma-sm text-weight-light">Phone</p>
-          <p class="q-ma-sm text-weight-bold">(808) 596-8415</p>
+        <div class="col-md-7 row">
+          <div class="col-md-4">
+            <p class="q-ma-sm text-weight-light">Address</p>
+            <p
+              class="q-ma-sm text-weight-bold"
+              style="font-size:15px"
+            >
+              523 Ahui St, Honolulu, HI 96813
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p class="q-ma-sm text-weight-light">Phone</p>
+            <p
+              class="q-ma-sm text-weight-bold"
+              style="font-size:15px"
+            >
+              (808) 596-8415
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p class="q-ma-sm text-weight-light">Instagram</p>
+            <p
+              class="q-ma-sm text-weight-bold"
+              style="font-size:15px"
+            >
+              @OriginalHawaiiOatCake
+            </p>
+          </div>
         </div>
-        <div class="col-md-5">
-          <p class="q-ma-sm text-weight-light">Instagram</p>
-          <p class="q-ma-sm text-weight-bold">@OriginalHawaiiOatCake</p>
-          <p class="q-ma-sm text-weight-light">Facebook</p>
-        </div>
-        <div class="col-md-1"/>
+        <div class="col-md-12" />
       </div>
     </div>
   </div>
