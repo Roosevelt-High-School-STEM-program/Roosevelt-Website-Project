@@ -1,11 +1,10 @@
 <template>
   <div
-    class="row"
+    class="row text-website-page-cutter-red"
     style="
       background-image: url('../../statics/food-pictures/oatmeal.jpg');
       background-size:cover;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: #DE4444"
+      background-color: rgba(0, 0, 0, 0.6);"
   >
     <div
       class="row col-md-12 justify-center q-my-none bg-website-white"
@@ -23,7 +22,7 @@
         </div>
         <div class="col-md-7 row">
           <div class="col-md-4">
-            <p class="q-ma-sm text-weight-light">Address</p>
+            <p class="q-ma-sm text-weight-light" style="font-size:17px">Address</p>
             <p
               class="q-ma-sm text-weight-bold"
               style="font-size:15px"
@@ -32,7 +31,7 @@
             </p>
           </div>
           <div class="col-md-4">
-            <p class="q-ma-sm text-weight-light">Phone</p>
+            <p class="q-ma-sm text-weight-light" style="font-size:17px">Phone</p>
             <p
               class="q-ma-sm text-weight-bold"
               style="font-size:15px"
@@ -41,7 +40,7 @@
             </p>
           </div>
           <div class="col-md-4">
-            <p class="q-ma-sm text-weight-light">Instagram</p>
+            <p class="q-ma-sm text-weight-light" style="font-size:17px">Instagram</p>
             <p
               class="q-ma-sm text-weight-bold"
               style="font-size:15px"
