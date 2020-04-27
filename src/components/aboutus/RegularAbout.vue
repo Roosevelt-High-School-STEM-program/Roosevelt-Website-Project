@@ -50,13 +50,12 @@
         style="letter-spacing: 2px;"
       >
           <p
-            class="text-weight-bold"
+            class="text-weight-bold text-website-page-cutter-red"
             style="font-size: 33px;
             font-family: Alegreya Sans SC;
-            text-align: center;
-            color: #DE4444"
-        >
-          Here at Honolulu
+            text-align: center;"
+          >
+            Here at Honolulu
             <br>
             Baking Company, We are
           </p>
