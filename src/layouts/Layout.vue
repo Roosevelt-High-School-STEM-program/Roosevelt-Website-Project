@@ -44,7 +44,6 @@
       </q-header>
         <regular-opening-screen />
         <regular-about id="about"/>
-        <regular-about-pictures />
         <regular-workers-screen id="ohana"/>
         <regular-contact-us id="contact-us" />
     </q-layout>
@@ -56,12 +55,10 @@ import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScre
 import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
 import RegularContactUs from '../components/contactus/RegularContactUs';
 import RegularAbout from '../components/aboutus/RegularAbout';
-import RegularAboutPictures from '../components/aboutus/RegularAboutPictures';
 
 export default {
   name: 'Layout',
   components: {
-    RegularAboutPictures,
     RegularAbout,
     RegularContactUs,
     RegularWorkersScreen,

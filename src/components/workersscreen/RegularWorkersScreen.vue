@@ -10,7 +10,7 @@
         <q-img
           style="background-position: center;  box-shadow: 5px 5px 5px grey;"
           :ratio="870/506"
-          src="../../statics/groupPic.jpeg"
+          src="../../statics/people-photos/groupPic.jpeg"
         />
       </div>
       <div class="col-md-1" />
@@ -39,8 +39,8 @@
       >
         <q-img
           class="col-2"
-          style="width: 300px; height: 300px; border-radius: 50%; border:solid 3px black"
-          src="../../statics/worker-1.jpeg"
+          style="width: 300px; height: 300px; border-radius: 50%;"
+          src="../../statics/people-photos/worker-1.jpeg"
         />
           <div class="column col-md-7" style="height:300px">
             <div class="col-md-3">
@@ -71,7 +71,7 @@
       </div>
       <div
         class="col-md-9 q-mt-md row items-center bg-website-gray"
-        style="border-radius: 200px 0px 0px 200px; height: 300px;"
+        style="border-radius: 200px 0px 0px 200px; height: 300px"
       >
         <q-img
           class="col-2"
