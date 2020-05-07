@@ -63,7 +63,6 @@
               </p>
             </div >
         </div>
-
       </div>
       <div class="column items-center">
         <div class="col-md-1 q-mt-md top-triangle"/>
@@ -76,7 +75,7 @@
         <q-img
           class="col-2"
           style="width: 300px; height: 300px; border-radius: 50%; border: solid 3px black"
-          src="../../statics/worker-2.jpeg"
+          src="../../statics/people-photos/worker-2.jpeg"
         />
         <div class="column col-md-7" style="height:300px">
           <div class="col-md-3">
@@ -111,7 +110,7 @@
         <q-img
           class="col-2"
           style="width: 300px; height: 300px; border-radius: 50%; border:solid 3px black"
-          src="../../statics/worker-3.jpeg"
+          src="../../statics/people-photos/worker-3.jpeg"
         />
         <div class="column col-md-7" style="height:300px">
           <div class="col-md-3">
