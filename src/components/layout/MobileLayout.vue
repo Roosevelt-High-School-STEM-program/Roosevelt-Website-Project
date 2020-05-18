@@ -5,9 +5,7 @@
         class="text-white transparent"
         height-hint="98"
       >
-        <q-btn dense flat round icon="menu" @click="left = !left" v-if="$q.screen.lt.sm" />
         <q-toolbar
-          v-else
           class="text-dark"
           style="font-family: Alegreya Sans SC; height: 20px;"
         >
@@ -42,6 +40,7 @@
             </q-btn>
           </div>
         </q-toolbar>
+        <q-btn v-if=" " dense flat round icon="menu" @click="left = !left" />
       </q-header>
       <q-drawer v-model="left" side="left" bordered>
         <q-btn
@@ -81,10 +80,10 @@
 </template>
 
 <script>
-import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
-import RegularContactUs from '../components/contactus/RegularContactUs';
-import RegularAbout from '../components/aboutus/RegularAbout';
-import OpeningScreen from '../pages/OpeningScreen';
+import RegularWorkersScreen from '../../components/workersscreen/RegularWorkersScreen';
+import RegularContactUs from '../../components/contactus/RegularContactUs';
+import RegularAbout from '../../components/aboutus/RegularAbout';
+import OpeningScreen from '../../pages/OpeningScreen';
 
 export default {
   name: 'Layout',
