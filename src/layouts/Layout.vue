@@ -42,7 +42,7 @@
         </q-toolbar>
 
       </q-header>
-        <regular-opening-screen />
+        <opening-screen />
         <regular-about id="about"/>
         <regular-workers-screen id="ohana"/>
         <regular-contact-us id="contact-us" />
@@ -51,18 +51,19 @@
 </template>
 
 <script>
-import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
+
 import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
 import RegularContactUs from '../components/contactus/RegularContactUs';
 import RegularAbout from '../components/aboutus/RegularAbout';
+import OpeningScreen from '../pages/OpeningScreen';
 
 export default {
   name: 'Layout',
   components: {
+    OpeningScreen,
     RegularAbout,
     RegularContactUs,
     RegularWorkersScreen,
-    RegularOpeningScreen,
   },
   data() {
     return {
