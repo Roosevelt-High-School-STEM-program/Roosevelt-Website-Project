@@ -3,10 +3,8 @@
     <q-layout view="hHh lpR fFf">
       <q-header
         class="text-white transparent"
-        height-hint="98"
       >
         <q-toolbar
-          class="text-dark"
           style="font-family: Alegreya Sans SC; height: 20px;"
         >
           <div class="col-md-6"></div>
@@ -42,12 +40,12 @@
         </q-toolbar>
 
       </q-header>
-        <regular-opening-screen />
-        <regular-three-client-page />
-        <regular-about id="about"/>
-        <regular-about-pictures />
-        <regular-workers-screen id="ohana"/>
-        <regular-contact-us id="contact-us" />
+      <regular-opening-screen />
+      <regular-three-client-page />
+      <regular-about id="about"/>
+      <!--        <regular-about-pictures />-->
+      <regular-workers-screen id="ohana"/>
+      <regular-contact-us id="contact-us" />
     </q-layout>
   </div>
 </template>
@@ -58,13 +56,13 @@ import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScre
 import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
 import RegularContactUs from '../components/contactus/RegularContactUs';
 import RegularAbout from '../components/aboutus/RegularAbout';
-import RegularAboutPictures from '../components/aboutus/RegularAboutPictures';
+// import RegularAboutPictures from '../components/aboutus/RegularAboutPictures';
 
 export default {
   name: 'Layout',
   components: {
     RegularThreeClientPage,
-    RegularAboutPictures,
+    // RegularAboutPictures,
     RegularAbout,
     RegularContactUs,
     RegularWorkersScreen,
