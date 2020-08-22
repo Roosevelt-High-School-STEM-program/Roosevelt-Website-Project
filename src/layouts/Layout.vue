@@ -8,7 +8,7 @@
           style="font-family: Alegreya Sans SC; height: 20px;"
         >
           <div class="col-md-6"></div>
-          <div class="col-md-6 row justify-end text-website-light-brown">
+          <div class="col-md-6 row justify-end text-website-page-cutter-red">
             <q-btn
               style="letter-spacing: 3px; font-size: 15px"
               flat
@@ -40,33 +40,31 @@
         </q-toolbar>
 
       </q-header>
-      <regular-opening-screen />
-      <regular-three-client-page />
-      <regular-about id="about"/>
-      <!--        <regular-about-pictures />-->
-      <regular-workers-screen id="ohana"/>
-      <regular-contact-us id="contact-us" />
+        <regular-opening-screen />
+        <regular-three-client-page />
+        <regular-about id="about"/>
+        <regular-workers-screen id="ohana"/>
+        <regular-contact-us id="contact-us" />
     </q-layout>
   </div>
 </template>
 
 <script>
+
 import RegularThreeClientPage from '../components/threeclientpage/RegularThreeClientPage';
 import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
 import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
 import RegularContactUs from '../components/contactus/RegularContactUs';
 import RegularAbout from '../components/aboutus/RegularAbout';
-// import RegularAboutPictures from '../components/aboutus/RegularAboutPictures';
 
 export default {
   name: 'Layout',
   components: {
+    RegularOpeningScreen,
     RegularThreeClientPage,
-    // RegularAboutPictures,
     RegularAbout,
     RegularContactUs,
     RegularWorkersScreen,
-    RegularOpeningScreen,
   },
   data() {
     return {
