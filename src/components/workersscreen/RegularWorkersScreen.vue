@@ -1,6 +1,6 @@
 <template>
-  <div class="row justify-center bg-website-white" style="height: 1920px;">
-    <div class="row justify-center items-center col-md-12">
+  <div class="row justify-center bg-website-white q-pb-lg">
+    <div class="row justify-center items-center col-md-12 q-my-md">
       <div class="col-md-3" />
       <div class="col-md-6">
         <q-img src="../../statics/ohana.png" />
@@ -27,104 +27,92 @@
       </div>
     </div>
 
-    <div class="col-md-12" />
-    <div class="col-md-1" />
+    <div class="col-md-12 q-mt-lg" />
     <div
-      class="row col-md-10 justify-center"
-      style="font-family: Alegreya Sans SC;"
+      class="row col-md-10 justify-center worker-headers"
     >
       <div
-        class="col-md-9 q-mt-md row items-center bg-website-gray"
-        style="border-radius: 200px 0px 0px 200px; height: 300px;"
+        class="col-md-12 q-my-lg row items-center"
+        style="height:360px"
       >
         <q-img
-          class="col-2"
-          style="width: 300px; height: 300px; border-radius: 50%;"
+          style="width: 300px; height: 360px; box-shadow: 5px 5px 5px grey;"
           src="../../statics/people-photos/worker-1.jpeg"
         />
-          <div class="column col-md-7" style="height:300px">
-            <div class="col-md-3">
-              <h1
-                class="q-my-none q-ml-md text-weight-bolder text-center"
-                style="font-size: 32px"
-              >
-                Worker
-              </h1>
-            </div>
-            <div class="col-md-5">
-              <p
-                class="col-md-5 q-ml-md q-my-none q-ml-md"
-                style="font-size: 19px; font-family: Inter;"
-              >
-                This worker is incredible. I'm truly amazed by their performance.
-                This worker is incredible. I'm truly amazed by their performance. LIke truly wow
-                This worker is incredible. I'm truly amazed by their performance.
-                This worker is incredible. I'm truly amazed by their performance.
-              </p>
-            </div >
+        <div class="col-md-7 offset-1" style="height:360px">
+          <div class="q-my-lg q-ml-md">
+            <h1
+              class="q-my-none text-weight-bolder text-center"
+              style="font-size: 32px"
+            >
+              First Name Last Name
+            </h1>
+            <p class="text-center">Years Worked</p>
+          </div>
+          <div>
+            <p
+              class="col-md-5 q-ml-md q-mt-md q-mb-none worker-description"
+            >
+              This worker is incredible. I'm truly amazed by their performance.
+              This worker is incredible. I'm truly amazed by their performance. LIke truly wow
+              This worker is incredible. I'm truly amazed by their performance.
+              This worker is incredible. I'm truly amazed by their performance.
+            </p>
+          </div >
         </div>
       </div>
-      <div class="column items-center">
-        <div class="col-md-1 q-mt-md top-triangle"/>
-        <div class="col-md-1 bottom-triangle" />
-      </div>
       <div
-        class="col-md-9 q-mt-md row items-center bg-website-gray"
-        style="border-radius: 200px 0px 0px 200px; height: 300px"
+        class="col-md-12 q-mt-lg row items-center"
+        style="height:360px"
       >
+        <div class="col-md-7 offset-1" style="height:360px">
+          <div class="q-mt-lg q-mb-lg q-ml-md">
+            <h1
+              class="q-my-none text-weight-bolder text-center"
+              style="font-size: 32px"
+            >
+              First Name Last Name
+            </h1>
+            <p class="text-center">Years Worked</p>
+          </div>
+          <div>
+            <p
+              class="col-md-5 q-mt-md q-my-none q-ml-md worker-description"
+            >
+              This worker is incredible. I'm truly amazed by their performance.
+              This worker is incredible. I'm truly amazed by their performance. LIke truly wow
+              This worker is incredible. I'm truly amazed by their performance.
+              This worker is incredible. I'm truly amazed by their performance.
+            </p>
+          </div >
+        </div>
         <q-img
-          class="col-2"
-          style="width: 300px; height: 300px; border-radius: 50%; border: solid 3px black"
+          class="q-ml-md offset-1"
+          style="width: 300px; height: 360px; box-shadow: 5px 5px 5px grey;"
           src="../../statics/people-photos/worker-2.jpeg"
         />
-        <div class="column col-md-7" style="height:300px">
-          <div class="col-md-3">
-            <h1
-              class="q-my-none q-ml-md text-weight-bolder text-center"
-              style="font-size: 32px"
-            >
-              Worker
-            </h1>
-          </div>
-          <div class="col-md-5">
-            <p
-              class="col-md-5 q-ml-md q-my-none q-ml-md"
-              style="font-size: 19px; font-family: Inter;"
-            >
-              This worker is incredible. I'm truly amazed by their performance.
-              This worker is incredible. I'm truly amazed by their performance. LIke truly wow
-              This worker is incredible. I'm truly amazed by their performance.
-              This worker is incredible. I'm truly amazed by their performance.
-            </p>
-          </div >
-        </div>
-      </div>
-      <div class="column items-center">
-        <div class="col-md-1 q-mt-md top-triangle"/>
-        <div class="col-md-1 bottom-triangle" />
       </div>
       <div
-        class="col-md-9 q-my-md row items-center bg-website-gray"
-        style="border-radius: 200px 0px 0px 200px; height: 300px;"
+        class="col-md-12 q-my-lg row items-center"
+        style="height:360px"
       >
         <q-img
-          class="col-2"
-          style="width: 300px; height: 300px; border-radius: 50%; border:solid 3px black"
+          style="width: 300px; height: 360px; box-shadow: 5px 5px 5px grey;"
           src="../../statics/people-photos/worker-3.jpeg"
         />
-        <div class="column col-md-7" style="height:300px">
-          <div class="col-md-3">
+        <div class="col-md-7 offset-1" style="height:360px">
+          <div class="q-my-lg q-ml-md">
             <h1
-              class="q-my-none q-ml-md text-weight-bolder text-center"
+              class="q-my-none text-weight-bolder text-center"
               style="font-size: 32px"
             >
-              Worker
+              First Name Last Name
             </h1>
+            <p class="text-center">Years Worked</p>
           </div>
-          <div class="col-md-5">
+          <div>
             <p
-              class="col-md-5 q-ml-md q-my-none q-ml-md"
-              style="font-size: 19px; font-family: Inter;"
+              class="col-md-5 q-ml-md q-mt-md q-mb-none worker-description"
             >
               This worker is incredible. I'm truly amazed by their performance.
               This worker is incredible. I'm truly amazed by their performance. LIke truly wow
@@ -134,13 +122,7 @@
           </div >
         </div>
       </div>
-      <div class="column items-center">
-        <div class="col-md-1 q-mt-md top-triangle" />
-        <div class="col-md-1 bottom-triangle" />
-      </div>
     </div>
-    <div class="col-md-1" />
-    <div class="col-md-12" />
   </div>
 
 </template>
@@ -159,5 +141,11 @@ export default {
 </script>
 
 <style scoped>
-
+  .worker-description {
+    font-size: 19px;
+    font-family: Inter;
+  }
+  .worker-headers {
+    font-family: Alegreya Sans SC;
+  }
 </style>

@@ -44,27 +44,24 @@
       </q-header>
         <regular-opening-screen />
         <regular-about id="about"/>
-        <regular-workers-screen-test id="ohana"/>
+        <regular-workers-screen id="ohana"/>
         <regular-contact-us id="contact-us" />
-        <simple-test/>
     </q-layout>
   </div>
 </template>
 
 <script>
 import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
-import RegularWorkersScreenTest from '../components/workersscreen/RegularWorkerScreenTest';
+import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
 import RegularContactUs from '../components/contactus/RegularContactUs';
 import RegularAbout from '../components/aboutus/RegularAbout';
-import SimpleTest from '../components/workersscreen/simpletest';
 
 export default {
   name: 'Layout',
   components: {
-    SimpleTest,
     RegularAbout,
     RegularContactUs,
-    RegularWorkersScreenTest,
+    RegularWorkersScreen,
     RegularOpeningScreen,
   },
   data() {
