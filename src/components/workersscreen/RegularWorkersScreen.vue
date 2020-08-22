@@ -8,7 +8,7 @@
       <div class="col-md-3" />
       <div class="col-md-6">
         <q-img
-          style="background-position: center;  box-shadow: 5px 5px 5px grey;"
+          style="background-position: center; box-shadow: 5px 5px 5px grey;"
           :ratio="870/506"
           src="../../statics/people-photos/groupPic.jpeg"
         />
@@ -36,7 +36,7 @@
         style="height:360px"
       >
         <q-img
-          style="width: 300px; height: 360px; box-shadow: 5px 5px 5px grey;"
+          class="worker-image"
           src="../../statics/people-photos/worker-1.jpeg"
         />
         <div class="col-md-7 offset-1" style="height:360px">
@@ -51,7 +51,7 @@
           </div>
           <div>
             <p
-              class="col-md-5 q-ml-md q-mt-md q-mb-none worker-description"
+              class="col-md-5 q-ml-md q-mt-md worker-description"
             >
               This worker is incredible. I'm truly amazed by their performance.
               This worker is incredible. I'm truly amazed by their performance. LIke truly wow
@@ -66,7 +66,7 @@
         style="height:360px"
       >
         <div class="col-md-7 offset-1" style="height:360px">
-          <div class="q-mt-lg q-mb-lg q-ml-md">
+          <div class="q-my-lg q-ml-md">
             <h1
               class="q-my-none text-weight-bolder text-center"
               style="font-size: 32px"
@@ -77,7 +77,7 @@
           </div>
           <div>
             <p
-              class="col-md-5 q-mt-md q-my-none q-ml-md worker-description"
+              class="col-md-5 q-mt-md q-ml-md worker-description"
             >
               This worker is incredible. I'm truly amazed by their performance.
               This worker is incredible. I'm truly amazed by their performance. LIke truly wow
@@ -87,8 +87,7 @@
           </div >
         </div>
         <q-img
-          class="q-ml-md offset-1"
-          style="width: 300px; height: 360px; box-shadow: 5px 5px 5px grey;"
+          class="q-ml-md offset-1 worker-image"
           src="../../statics/people-photos/worker-2.jpeg"
         />
       </div>
@@ -97,7 +96,7 @@
         style="height:360px"
       >
         <q-img
-          style="width: 300px; height: 360px; box-shadow: 5px 5px 5px grey;"
+          class="worker-image"
           src="../../statics/people-photos/worker-3.jpeg"
         />
         <div class="col-md-7 offset-1" style="height:360px">
@@ -112,7 +111,7 @@
           </div>
           <div>
             <p
-              class="col-md-5 q-ml-md q-mt-md q-mb-none worker-description"
+              class="col-md-5 q-ml-md q-mt-md worker-description"
             >
               This worker is incredible. I'm truly amazed by their performance.
               This worker is incredible. I'm truly amazed by their performance. LIke truly wow
@@ -141,6 +140,11 @@ export default {
 </script>
 
 <style scoped>
+  .worker-image {
+    width: 300px;
+    height: 360px;
+    box-shadow: 5px 5px 5px grey;
+  }
   .worker-description {
     font-size: 19px;
     font-family: Inter;
