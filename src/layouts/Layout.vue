@@ -10,7 +10,7 @@
           style="font-family: Alegreya Sans SC; height: 20px;"
         >
           <div class="col-md-6"></div>
-          <div class="col-md-6 row justify-end text-website-light-brown">
+          <div class="col-md-6 row justify-end text-website-page-cutter-red">
             <q-btn
               style="letter-spacing: 3px; font-size: 15px"
               flat
