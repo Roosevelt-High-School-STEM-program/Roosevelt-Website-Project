@@ -1,34 +1,44 @@
 <template>
-  <div class="col-md-12 row" style="height:800px;">
-    <div
-      class="col-md-4 row justify-center"
-    >
-      <q-img v-ripple src="../../statics/hand-cut.jpeg">
-        <div
-          class="row items-center justify-center button-properties text-weight-bold img-styling"
-        >
-          HAND-CUT PRODUCE
+  <div class="col-md-12 row">
+    <q-list class="col-12 row text-weight-bold">
+      <q-item
+        class="col-4 q-pa-none"
+        clickable
+        v-ripple
+        style="background-image: url('../../statics/hand-cut.jpeg'); background-size: cover;"
+        to="hand-cut-produce"
+      >
+        <div class="column justify-center image-cover">
+          <q-item-section class="text-center col image-text">
+            HAND-CUT PRODUCE
+          </q-item-section>
         </div>
-      </q-img>
-    </div>
-    <div class="col-md-4 row justify-center">
-      <q-img v-ripple src="../../statics/scones.jpeg">
-        <div
-          class="row items-center justify-center button-properties text-weight-bold img-styling"
-        >
-          BAKERY
+      </q-item>
+      <q-item
+        class="col-4 q-pa-none"
+        clickable
+        v-ripple
+        style="background-image: url('../../statics/scones.jpeg'); background-size: cover;"
+      >
+        <div class="column justify-center image-cover">
+          <q-item-section class="text-center col image-text">
+            BAKERY
+          </q-item-section>
         </div>
-      </q-img>
-    </div>
-    <div class="col-md-4 row justify-center">
-      <q-img v-ripple src="../../statics/scones.jpeg">
-        <div
-          class="row items-center justify-center button-properties text-weight-bold img-styling"
-        >
-          Bakery
+      </q-item>
+      <q-item
+        class="col-4 q-pa-none"
+        clickable
+        v-ripple
+        style="background-image: url('../../statics/scones.jpeg'); background-size: cover;"
+      >
+        <div class="column justify-center image-cover">
+          <q-item-section class="text-center col image-text">
+            BAKERY
+          </q-item-section>
         </div>
-      </q-img>
-    </div>
+      </q-item>
+    </q-list>
   </div>
 </template>
 
@@ -38,26 +48,26 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-  .button-properties {
-    cursor: pointer;
-    transition: all .27s linear;
-  }
-  .button-properties:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: all .27s linear;
-  }
-  #hand-cut-produce {
-    background-size: cover;
-  }
-  #bakery {
-    background-size: cover;
-  }
+<style scoped type="text/scss" lang="scss">
+  /*.button-properties {*/
+  /*  cursor: pointer;*/
+  /*  transition: all .27s linear;*/
+  /*}*/
+  /*.button-properties:hover {*/
+  /*  background-color: rgba(0, 0, 0, 0.5);*/
+  /*  transition: all .27s linear;*/
+  /*}*/
+  /*#hand-cut-produce {*/
+  /*  background-size: cover;*/
+  /*}*/
+  /*#bakery {*/
+  /*  background-size: cover;*/
+  /*}*/
   /*TODO change the name of this variable to match whatever the client wanted*/
-  #changeNameLater {
-    background-image: url("../../statics/salads.jpeg");
-    background-size: cover;
-  }
+  /*#changeNameLater {*/
+  /*  background-image: url("../../statics/salads.jpeg");*/
+  /*  background-size: cover;*/
+  /*}*/
   .img-styling {
     width: 100%;
     height:100%;
@@ -65,5 +75,16 @@ export default {
     font-family: Alegreya Sans SC;
     letter-spacing: 3px;
     color: $website-light-brown;
+  }
+  .image-cover {
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .image-text {
+    font-size:32px;
+    color: $website-red;
+    letter-spacing: 3px;
+    user-select: none;
   }
 </style>

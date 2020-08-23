@@ -1,39 +1,64 @@
 <template>
-  <div class="row bg-website-white" style="height:800px;">
-    <div class="row justify-center items-center col-md-12 ">
-      <div class="col-md-1 q-mt-none" />
-        <div
-          class="col-md-4 text-center"
-          style=" font-family: Alegreya Sans SC, cursive;"
-        >
-          <h1
-            class="q-my-none text-weight-bold letter-spacing: 3px;"
-            style="font-size: 45px"
+  <div class="row bg-website-white" style="min-height:800px;">
+    <transition
+      class="col-md-12"
+      appear
+      enter-active-class="animated slideInLeft"
+    >
+      <div
+        v-show="group === 'aboutUs'"
+        class="row justify-center items-center"
+        style="height:513px"
+      >
+        <div class="col-md-1 q-mt-none" />
+          <div
+            class="col-md-4 text-center"
+            style=" font-family: Alegreya Sans SC, cursive;"
           >
-            welcome
-          </h1>
-          <p class="q-mt-sm" style="font-size:15px">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point of using Lorem I
-            psum is that it has a more-or-less normal distribution of letters, as opposed to using
-            'Content here, content here', making it look like r
-            eadable English. Many desktop publishing packages and web pa
-            ge editors now use Lorem Ipsum as their default model text,
-            and a search for 'lorem ipsum' will uncover many web sites stil
-            l in their infancy. Various versions have evolved over the years,
-            sometimes by accident, sometimes on purpose (injected humour and
-            the like).
-          </p>
+            <h1
+              class="q-my-none text-weight-bold letter-spacing: 3px;"
+              style="font-size: 45px"
+            >
+              welcome
+            </h1>
+            <p class="q-mt-sm" style="font-size:19px; font-family: 'Anaheim'">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The point of using Lorem I
+              psum is that it has a more-or-less normal distribution of letters, as opposed to using
+              'Content here, content here', making it look like r
+              eadable English. Many desktop publishing packages and web pa
+              ge editors now use Lorem Ipsum as their default model text,
+              and a search for 'lorem ipsum' will uncover many web sites stil
+              l in their infancy. Various versions have evolved over the years,
+              sometimes by accident, sometimes on purpose (injected humour and
+              the like).
+            </p>
+          </div>
+          <div class="col-md-2" />
+          <div class="row col-md-4">
+            <q-img
+              class="float-image"
+              style="max-width:320px"
+              src="../../statics/food-pictures/oatCakeTopDown.png"
+            />
         </div>
-        <div class="col-md-2" />
-        <div class="row col-md-4">
-          <q-img
-            class="float-image"
-            style="max-width:320px"
-            src="../../statics/food-pictures/oatCakeTopDown.png"
-          />
       </div>
-    </div>
+    </transition>
+    <transition
+      class="col-md-12"
+      appear
+      enter-active-class="animated slideInRight"
+    >
+      <regular-three-client-page v-show="group === 'threeClientPage'" style="height:513px" />
+    </transition>
+    <q-option-group
+      class="col-md-12"
+      v-model="group"
+      :options="options"
+      color="red"
+      inline
+    />
+
     <div
       class="row col-md-12"
       style="
@@ -79,8 +104,28 @@
 </template>
 
 <script>
+import RegularThreeClientPage from '../../components/threeclientpage/RegularThreeClientPage';
+
 export default {
   name: 'RegularAbout',
+  components: {
+    RegularThreeClientPage,
+  },
+  data() {
+    return {
+      group: 'aboutUs',
+      options: [
+        {
+          label: '',
+          value: 'aboutUs',
+        },
+        {
+          label: '',
+          value: 'threeClientPage',
+        },
+      ],
+    };
+  },
 };
 </script>
 

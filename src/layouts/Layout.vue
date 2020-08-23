@@ -22,58 +22,55 @@
               style="letter-spacing: 3px; font-size: 15px"
               flat
               class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
-              @click="teleport('#ohana')"
+              @click="teleport('#about')"
               name="hello"
             >
-              OHANA
+             produce
             </q-btn>
             <q-btn
               style="letter-spacing: 3px; font-size: 15px"
               flat
               class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
-              @click="teleport('#contact-us')"
+              @click="teleport('#about')"
               name="hello"
             >
-              CONTACT
+              Bakery
             </q-btn>
+            <q-btn
+              style="letter-spacing: 3px; font-size: 15px"
+              flat
+              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
+              @click="teleport('#ohana')"
+              name="hello"
+            >
+              OHANA
+            </q-btn>
+<!--            <q-btn-->
+<!--              style="letter-spacing: 3px; font-size: 15px"-->
+<!--              flat-->
+<!--              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"-->
+<!--              @click="teleport('#contact-us')"-->
+<!--              name="hello"-->
+<!--            >-->
+<!--              CONTACT-->
+<!--            </q-btn>-->
           </div>
         </q-toolbar>
-
       </q-header>
-        <regular-opening-screen />
-        <regular-three-client-page />
-        <regular-about id="about"/>
-        <regular-workers-screen id="ohana"/>
-        <regular-contact-us id="contact-us" />
+      <q-page-container style="padding: 0 0 0 0">
+        <router-view />
+      </q-page-container>
     </q-layout>
   </div>
 </template>
 
 <script>
 
-import RegularThreeClientPage from '../components/threeclientpage/RegularThreeClientPage';
-import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
-import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
-import RegularContactUs from '../components/contactus/RegularContactUs';
-import RegularAbout from '../components/aboutus/RegularAbout';
-
 export default {
   name: 'Layout',
-  components: {
-    RegularOpeningScreen,
-    RegularThreeClientPage,
-    RegularAbout,
-    RegularContactUs,
-    RegularWorkersScreen,
-  },
-  data() {
-    return {
-    };
-  },
   methods: {
     teleport(select) {
-      // eslint-disable-next-line no-restricted-globals
-      document.querySelector(select).scrollIntoView({ behavior: 'smooth' });
+      this.$root.$emit('on-submit', select);
     },
   },
 };
