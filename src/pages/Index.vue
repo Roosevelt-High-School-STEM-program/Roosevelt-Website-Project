@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <regular-opening-screen />
+    <regular-opening-screen id="opening-screen" />
     <regular-about id="about"/>
     <regular-workers-screen id="ohana"/>
     <products id="products" />
@@ -26,7 +26,20 @@ export default {
   },
   methods: {
     scrollTo(select) {
-      document.querySelector(select).scrollIntoView({ behavior: 'smooth' });
+      // length of the var too long
+      const divPosition = document.querySelector(select).getBoundingClientRect().top
+          + window.scrollY;
+      if (divPosition < 0) {
+        window.scroll({
+          top: divPosition,
+          behavior: 'smooth',
+        });
+      } else {
+        window.scroll({
+          top: divPosition - 52,
+          behavior: 'smooth',
+        });
+      }
     },
   },
   created() {

@@ -1,5 +1,5 @@
 <template>
-  <div class="row bg-website-white" style="min-height:800px;">
+  <div class="row bg-white" style="min-height:800px;">
       <div
         class="row justify-center items-center"
         style="height:513px"
@@ -11,9 +11,9 @@
           >
             <h1
               class="q-my-none text-weight-bold letter-spacing: 3px;"
-              style="font-size: 45px"
+              style="font-size: 45px; letter-spacing: 2px"
             >
-              welcome
+              About Us
             </h1>
             <p class="q-mt-sm" style="font-size:19px; font-family: 'Anaheim'">
               It is a long established fact that a reader will be distracted by
@@ -46,14 +46,14 @@
     >
       <div
         class="row justify-center items-center col-md-12"
-        style="background-color: rgba(56, 41, 19, 0.6);"
+        style="background-color: rgba(20, 15, 15, 0.6);"
       >
       <div
         class="row justify-center col-md-4 text-center"
         style="letter-spacing: 2px;"
       >
           <p
-            class="text-weight-bold text-website-page-cutter-red"
+            class="text-weight-bold text-white"
             style="font-size: 33px;
             font-family: Alegreya Sans SC;
             text-align: center;"
@@ -67,13 +67,13 @@
       <div class="col-md-3">
         <q-img
           style="max-width: 120px;"
-          src="../../statics/cert/USDA&FDA.png"
+          src="../../statics/cert/USDA&FDAWhite.png"
         />
       </div>
       <div class="col-md-3">
         <q-img
           style="max-width: 270px;"
-          src="../../statics/cert/Military&state&SQF2.png"
+          src="../../statics/cert/Military&state&SQF2White.png"
         />
       </div>
       </div>

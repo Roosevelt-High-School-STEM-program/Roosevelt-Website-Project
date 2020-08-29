@@ -1,25 +1,18 @@
 <template>
   <div class="row">
-    <div class="col-md-12 column" style="height:800px">
-      <!-- Note is that the box is not resizing because
-       the background is taking up 100% of the page -->
+    <div class="col-md-12 column" style="height:720px">
       <div
         class="col-md-12 row"
         id="front-page-image"
       >
         <div
-          class="col-md-12 row items-center"
+          class="col-md-12 row items-center justify-center"
           style="background-color: rgba(0, 0, 0, 0.6);"
         >
-          <div class="col-md-12" />
-          <div class="col-md-4" />
-          <div class="col-md-4" >
-            <q-img src="../../statics/HonoluluBakingCircle.png"/>
+          <div class="col-md-5  text-white text-center" >
+            <h1>Honolulu Baking Company</h1>
           </div>
-          <div class="col-md-12" />
-          <div class="col-md-12" />
         </div>
-
       </div>
     </div>
   </div>
@@ -32,5 +25,14 @@ export default {
 </script>
 
 <style scoped>
-
+  #front-page-image {
+    background-image: url('/statics/food-pictures/oatCake.JPG');
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+  }
+  h1 {
+    font-family: Alegreya Sans SC;
+    letter-spacing: 2px;
+  }
 </style>
