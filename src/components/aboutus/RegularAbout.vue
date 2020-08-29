@@ -1,12 +1,6 @@
 <template>
   <div class="row bg-website-white" style="min-height:800px;">
-    <transition
-      class="col-md-12"
-      appear
-      enter-active-class="animated slideInLeft"
-    >
       <div
-        v-show="group === 'aboutUs'"
         class="row justify-center items-center"
         style="height:513px"
       >
@@ -43,22 +37,6 @@
             />
         </div>
       </div>
-    </transition>
-    <transition
-      class="col-md-12"
-      appear
-      enter-active-class="animated slideInRight"
-    >
-      <regular-three-client-page v-show="group === 'threeClientPage'" style="height:513px" />
-    </transition>
-    <q-option-group
-      class="col-md-12"
-      v-model="group"
-      :options="options"
-      color="red"
-      inline
-    />
-
     <div
       class="row col-md-12"
       style="
@@ -104,28 +82,9 @@
 </template>
 
 <script>
-import RegularThreeClientPage from '../../components/threeclientpage/RegularThreeClientPage';
 
 export default {
   name: 'RegularAbout',
-  components: {
-    RegularThreeClientPage,
-  },
-  data() {
-    return {
-      group: 'aboutUs',
-      options: [
-        {
-          label: '',
-          value: 'aboutUs',
-        },
-        {
-          label: '',
-          value: 'threeClientPage',
-        },
-      ],
-    };
-  },
 };
 </script>
 

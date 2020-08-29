@@ -45,6 +45,7 @@
 <script>
 export default {
   name: 'ThreeClientPage',
+  // TODO May remove this page due to it being irrelevant dk yet
 };
 </script>
 

@@ -2,27 +2,27 @@
   <q-page>
     <regular-opening-screen />
     <regular-about id="about"/>
-<!--    <regular-three-client-page />-->
     <regular-workers-screen id="ohana"/>
+    <products id="products" />
     <regular-contact-us id="contact-us" />
   </q-page>
 </template>
 
 <script>
 import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
-// import RegularThreeClientPage from '../components/threeclientpage/RegularThreeClientPage';
 import RegularAbout from '../components/aboutus/RegularAbout';
 import RegularContactUs from '../components/contactus/RegularContactUs';
 import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
+import Products from '../pages/Products';
 
 export default {
   name: 'Index',
   components: {
     RegularOpeningScreen,
-    // RegularThreeClientPage,
     RegularAbout,
     RegularContactUs,
     RegularWorkersScreen,
+    Products,
   },
   methods: {
     scrollTo(select) {

@@ -14,46 +14,55 @@
               flat
               class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
               @click="teleport('#about')"
-              name="hello"
+              name="about"
             >
-              ABOUT
-            </q-btn>
-            <q-btn
-              style="letter-spacing: 3px; font-size: 15px"
-              flat
-              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
-              @click="teleport('#about')"
-              name="hello"
-            >
-             produce
-            </q-btn>
-            <q-btn
-              style="letter-spacing: 3px; font-size: 15px"
-              flat
-              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
-              @click="teleport('#about')"
-              name="hello"
-            >
-              Bakery
+              about
             </q-btn>
             <q-btn
               style="letter-spacing: 3px; font-size: 15px"
               flat
               class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
               @click="teleport('#ohana')"
-              name="hello"
+              name="ohana"
             >
-              OHANA
+              ohana
+            </q-btn>
+            <q-btn
+              style="letter-spacing: 3px; font-size: 15px"
+              flat
+              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
+              @click="teleport('#products')"
+              name="products"
+            >
+              products
             </q-btn>
 <!--            <q-btn-->
 <!--              style="letter-spacing: 3px; font-size: 15px"-->
 <!--              flat-->
 <!--              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"-->
-<!--              @click="teleport('#contact-us')"-->
+<!--              @click="teleport('#bakery')"-->
 <!--              name="hello"-->
 <!--            >-->
-<!--              CONTACT-->
+<!--              bakery-->
 <!--            </q-btn>-->
+<!--            <q-btn-->
+<!--              style="letter-spacing: 3px; font-size: 15px"-->
+<!--              flat-->
+<!--              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"-->
+<!--              @click="teleport('#produce')"-->
+<!--              name="hello"-->
+<!--            >-->
+<!--              produce-->
+<!--            </q-btn>-->
+            <q-btn
+              style="letter-spacing: 3px; font-size: 15px"
+              flat
+              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
+              @click="teleport('#contact-us')"
+              name="contact"
+            >
+              contact
+            </q-btn>
           </div>
         </q-toolbar>
       </q-header>

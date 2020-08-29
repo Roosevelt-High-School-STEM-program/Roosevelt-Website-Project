@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Bakery',
+  name: 'ContactUs',
 };
 </script>
 

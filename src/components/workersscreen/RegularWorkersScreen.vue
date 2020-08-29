@@ -129,13 +129,6 @@
 <script>
 export default {
   name: 'RegularWorkersScreen',
-  data() {
-  },
-  methods: {
-    floatingImages() {
-
-    },
-  },
 };
 </script>
 
