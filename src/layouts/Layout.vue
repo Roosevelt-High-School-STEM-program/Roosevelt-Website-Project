@@ -3,10 +3,8 @@
     <q-layout view="hHh lpR fFf">
       <q-header
         class="text-white transparent"
-        height-hint="98"
       >
         <q-toolbar
-          class="text-dark"
           style="font-family: Alegreya Sans SC; height: 20px;"
         >
           <div class="col-md-6"></div>
@@ -16,63 +14,72 @@
               flat
               class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
               @click="teleport('#about')"
-              name="hello"
+              name="about"
             >
-              ABOUT
+              about
             </q-btn>
             <q-btn
               style="letter-spacing: 3px; font-size: 15px"
               flat
               class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
               @click="teleport('#ohana')"
-              name="hello"
+              name="ohana"
             >
-              OHANA
+              ohana
             </q-btn>
             <q-btn
               style="letter-spacing: 3px; font-size: 15px"
               flat
               class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
-              @click="teleport('#contact-us')"
-              name="hello"
+              @click="teleport('#products')"
+              name="products"
             >
-              CONTACT
+              products
+            </q-btn>
+<!--            <q-btn-->
+<!--              style="letter-spacing: 3px; font-size: 15px"-->
+<!--              flat-->
+<!--              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"-->
+<!--              @click="teleport('#bakery')"-->
+<!--              name="hello"-->
+<!--            >-->
+<!--              bakery-->
+<!--            </q-btn>-->
+<!--            <q-btn-->
+<!--              style="letter-spacing: 3px; font-size: 15px"-->
+<!--              flat-->
+<!--              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"-->
+<!--              @click="teleport('#produce')"-->
+<!--              name="hello"-->
+<!--            >-->
+<!--              produce-->
+<!--            </q-btn>-->
+            <q-btn
+              style="letter-spacing: 3px; font-size: 15px"
+              flat
+              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"
+              @click="teleport('#contact-us')"
+              name="contact"
+            >
+              contact
             </q-btn>
           </div>
         </q-toolbar>
-
       </q-header>
-        <opening-screen />
-        <regular-about id="about"/>
-        <regular-workers-screen id="ohana"/>
-        <regular-contact-us id="contact-us" />
+      <q-page-container style="padding: 0 0 0 0">
+        <router-view />
+      </q-page-container>
     </q-layout>
   </div>
 </template>
 
 <script>
 
-import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
-import RegularContactUs from '../components/contactus/RegularContactUs';
-import RegularAbout from '../components/aboutus/RegularAbout';
-import OpeningScreen from '../pages/OpeningScreen';
-
 export default {
   name: 'Layout',
-  components: {
-    OpeningScreen,
-    RegularAbout,
-    RegularContactUs,
-    RegularWorkersScreen,
-  },
-  data() {
-    return {
-    };
-  },
   methods: {
     teleport(select) {
-      // eslint-disable-next-line no-restricted-globals
-      document.querySelector(select).scrollIntoView({ behavior: 'smooth' });
+      this.$root.$emit('on-submit', select);
     },
   },
 };

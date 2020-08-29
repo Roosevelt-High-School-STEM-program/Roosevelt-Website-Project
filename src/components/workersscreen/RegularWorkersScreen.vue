@@ -15,7 +15,7 @@
       </div>
       <div class="col-md-1" />
       <div class="col-md-3 text-center q-ml-lg">
-        <p style="font-family: 'Anaheim'; line-height: 30px;">
+        <p style="font-family: 'Anaheim'; font-size:19px; line-height: 30px;">
           It is a long established fact that a reader will be distracted by the readable
           content of a page when looking at its layout. The point of using Lorem Ipsum
           is that it has a more-or-less normal distribution of letters, as opposed to using
@@ -129,13 +129,6 @@
 <script>
 export default {
   name: 'RegularWorkersScreen',
-  data() {
-  },
-  methods: {
-    floatingImages() {
-
-    },
-  },
 };
 </script>
 
@@ -147,7 +140,7 @@ export default {
   }
   .worker-description {
     font-size: 19px;
-    font-family: Inter;
+    font-family: 'Anaheim'
   }
   .worker-headers {
     font-family: Alegreya Sans SC;
