@@ -1,20 +1,19 @@
 <template>
   <div
-    class="row text-website-page-cutter-red"
+    class="row text-white"
     style="
       background-image: url('../../statics/food-pictures/oatmeal.jpg');
-      background-size:cover;
-      background-color: rgba(0, 0, 0, 0.6);"
+      background-size:cover;"
   >
     <div
       class="row col-md-12 justify-center q-my-none bg-website-white"
-      style="height: 325px; background-color: rgba(56, 41, 19, 0.7);"
+      style="height: 325px; background-color: rgba(56, 41, 25, 0.7);"
     >
       <div class="col-md-12 row justify-center text-center">
         <div class="col-md-12" />
         <div class="col-md-12 q-my-none">
           <h1
-            class="q-my-sm text-weight-bold"
+            class="q-my-sm text-weight-medium"
             style="font-family: Alegreya Sans SC; letter-spacing: 2px;"
           >
             CONTACT INFO
