@@ -1,13 +1,14 @@
 <template>
   <div>
     <q-layout view="hHh lpR fFf">
-<!--      <q-header class="text-white transparent">-->
       <q-header elevated class="text-black bg-white">
         <q-toolbar style="font-family: Alegreya Sans SC;">
           <div>
             <q-img
-              style="height:50px; width:70px"
+
+              style="height:50px; width:70px; cursor: pointer;"
               src="../statics/icons/HonoluluBakingLogoBlackWhite.png"
+              @click="teleport('#opening-screen')"
             />
           </div>
           <div style="width:100%">
@@ -51,30 +52,9 @@
             >
               about
             </q-btn>
-
-<!--            <q-btn-->
-<!--              style="letter-spacing: 3px; font-size: 15px"-->
-<!--              flat-->
-<!--              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"-->
-<!--              @click="teleport('#bakery')"-->
-<!--              name="hello"-->
-<!--            >-->
-<!--              bakery-->
-<!--            </q-btn>-->
-<!--            <q-btn-->
-<!--              style="letter-spacing: 3px; font-size: 15px"-->
-<!--              flat-->
-<!--              class="col-md-2 q-pa-sm q-ml-md text-weight-bold"-->
-<!--              @click="teleport('#produce')"-->
-<!--              name="hello"-->
-<!--            >-->
-<!--              produce-->
-<!--            </q-btn>-->
-
           </div>
         </q-toolbar>
       </q-header>
-<!--      <q-page-container style="padding: 0 0 0 0">-->
       <q-page-container>
         <router-view />
       </q-page-container>

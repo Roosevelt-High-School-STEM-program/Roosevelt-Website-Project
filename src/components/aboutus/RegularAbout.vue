@@ -46,7 +46,7 @@
     >
       <div
         class="row justify-center items-center col-md-12"
-        style="background-color: rgba(56, 41, 25, 0.6);"
+        style="background-color: rgba(20, 15, 15, 0.6);"
       >
       <div
         class="row justify-center col-md-4 text-center"

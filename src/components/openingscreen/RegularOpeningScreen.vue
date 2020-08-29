@@ -7,15 +7,12 @@
       >
         <div
           class="col-md-12 row items-center justify-center"
-          style="background-color: rgba(0, 0, 0, 0.6); "
+          style="background-color: rgba(0, 0, 0, 0.6);"
         >
           <div class="col-md-5  text-white text-center" >
-            <h1>
-              Honolulu Baking Company
-            </h1>
+            <h1>Honolulu Baking Company</h1>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -28,6 +25,12 @@ export default {
 </script>
 
 <style scoped>
+  #front-page-image {
+    background-image: url('/statics/food-pictures/oatCake.JPG');
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+  }
   h1 {
     font-family: Alegreya Sans SC;
     letter-spacing: 2px;
