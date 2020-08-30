@@ -7,10 +7,10 @@
         <div class="col-md-1 q-mt-none" />
           <div
             class="col-md-4 text-center"
-            style=" font-family: Alegreya Sans SC, cursive;"
+            style="font-family: Alegreya Sans SC, cursive;"
           >
             <h1
-              class="q-my-none text-weight-bold letter-spacing: 3px;"
+              class="q-my-none text-weight-bold"
               style="font-size: 45px; letter-spacing: 2px"
             >
               About Us
@@ -53,7 +53,7 @@
         style="letter-spacing: 2px;"
       >
           <p
-            class="text-weight-bold text-white"
+            class="text-weight-bold text-white no-hightlight"
             style="font-size: 33px;
             font-family: Alegreya Sans SC;
             text-align: center;"

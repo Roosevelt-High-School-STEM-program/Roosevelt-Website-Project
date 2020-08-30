@@ -7,7 +7,7 @@
       <div class="col-md-12 row justify-center text-center">
         <div class="col-md-12" />
         <div class="col-md-12 q-my-none">
-          <h1 class="q-my-sm text-weight-medium">
+          <h1 class="q-my-sm text-weight-medium no-hightlight">
             CONTACT INFO
           </h1>
         </div>
@@ -15,7 +15,7 @@
           <div class="col-md-4">
             <div class="row justify-center items-center">
               <q-icon name="place" size="20px" />
-              <p class="q-ma-sm text-weight-bold contact-info">
+              <p class="q-ma-sm text-weight-bold contact-info no-hightlight">
                 Address
               </p>
             </div>
@@ -26,7 +26,7 @@
           <div class="col-md-4">
             <div class="row justify-center items-center">
               <q-icon name="phone" size="20px" />
-              <p class="q-ma-sm text-weight-bold contact-info">Phone</p>
+              <p class="q-ma-sm text-weight-bold contact-info no-hightlight">Phone</p>
             </div>
             <p class="q-ma-sm text-weight-medium" style="font-size: 17px">
               (808) 596-8415
@@ -35,7 +35,7 @@
           <div class="col-md-4">
             <div class="row justify-center items-center">
               <q-icon name="img:../../statics/instagramGlyphLogo.png" size="18px" />
-              <p class="q-ma-sm text-weight-bold contact-info">Instagram</p>
+              <p class="q-ma-sm text-weight-bold contact-info no-hightlight">Instagram</p>
             </div>
             <p class="q-ma-sm text-weight-medium" style="font-size:17px">
               @OriginalHawaiiOatCake

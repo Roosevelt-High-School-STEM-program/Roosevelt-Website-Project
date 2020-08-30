@@ -9,7 +9,7 @@
           class="col-md-12 row items-center justify-center"
           style="background-color: rgba(0, 0, 0, 0.6);"
         >
-          <div class="col-md-5  text-white text-center" >
+          <div class="col-md-5 no-hightlight text-white text-center" >
             <h1>Honolulu Baking Company</h1>
           </div>
         </div>
