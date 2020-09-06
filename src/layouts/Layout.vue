@@ -18,40 +18,45 @@
               flat
               class="floatEm q-pa-sm text-weight-bold"
               @click="teleport('#contact-us')"
+              label="contact"
               name="contact"
-            >
-              contact
-            </q-btn>
+            />
             <q-btn
               style="letter-spacing: 3px;"
               size="14px"
               flat
-              class="floatEm q-pa-sm q-ml-md text-weight-bold"
-              @click="teleport('#ohana')"
-              name="ohana"
-            >
-              ohana
-            </q-btn>
+              class="floatEm q-pa-sm text-weight-bold"
+              @click="delivery"
+              label="delivery"
+              name="delivery"
+            />
             <q-btn
               style="letter-spacing: 3px;"
               size="14px"
               flat
               class="floatEm q-pa-sm q-ml-md text-weight-bold"
               @click="teleport('#products')"
+              label="products"
               name="products"
-            >
-              products
-            </q-btn>
+            />
+            <q-btn
+              style="letter-spacing: 3px;"
+              size="14px"
+              flat
+              class="floatEm q-pa-sm q-ml-md text-weight-bold"
+              @click="teleport('#ohana')"
+              label="ohana"
+              name="ohana"
+            />
             <q-btn
               style="letter-spacing: 3px;"
               size="14px"
               flat
               class="floatEm q-pa-sm q-ml-md text-weight-bold"
               @click="teleport('#about')"
+              label="about"
               name="about"
-            >
-              about
-            </q-btn>
+            />
           </div>
         </q-toolbar>
       </q-header>
@@ -69,6 +74,9 @@ export default {
   methods: {
     teleport(select) {
       this.$root.$emit('on-submit', select);
+    },
+    delivery() {
+      window.open('https://www.grubhub.com/restaurant/honolulu-baking-company-523-ahui-st-honolulu/2048001');
     },
   },
 };

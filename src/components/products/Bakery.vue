@@ -25,34 +25,15 @@
         <div class="q-my-md q-mx-lg" style="border-bottom:1px black solid;" />
 
         <div class="row q-ma-md">
-          <div class="col-md-6 q-mt-lg">
-            <address-component>
-              <template v-slot:place>Walmart</template>
-              <template v-slot:address>1232 Nehoa Street</template>
-              <template v-slot:city>Honolulu, Hi, 96822</template>
-            </address-component>
-          </div>
-          <div class="col-md-6 q-mt-lg">
-            <address-component>
-              <template v-slot:place>Walmart</template>
-              <template v-slot:address>1232 Nehoa Street</template>
-              <template v-slot:city>Honolulu, Hi, 96822</template>
-            </address-component>
-          </div>
-          <div class="col-md-6 q-mt-lg">
-            <address-component>
-              <template v-slot:place>Walmart</template>
-              <template v-slot:address>1232 Nehoa Street</template>
-              <template v-slot:city>Honolulu, Hi, 96822</template>
-            </address-component>
-          </div>
-          <div class="col-md-6 q-mt-lg">
-            <address-component>
-              <template v-slot:place>Walmart</template>
-              <template v-slot:address>1232 Nehoa Street</template>
-              <template v-slot:city>Honolulu, Hi, 96822</template>
-            </address-component>
-          </div>
+          <address-component
+            v-for="(location, x) in locations"
+            :key="x"
+            class="col-md-6 q-mt-lg" @on-submit="openLocation(x)"
+          >
+            <template v-slot:name>{{ locations[x].name }}</template>
+            <template v-slot:street>{{ locations[x].street }}</template>
+            <template v-slot:city>{{ locations[x].city }}</template>
+          </address-component>
         </div>
       </div>
       <div class="col"/>
@@ -109,7 +90,35 @@ export default {
   data() {
     return {
       slide: 1,
+      slotNames: ['place', 'address', 'city'],
+      locations: [
+        {
+          name: 'Walmart',
+          street: '700 Ke’eaumoku St',
+          city: 'Honolulu, HI 96814',
+        },
+        {
+          name: 'Cultural Plaza',
+          street: '100 N Beretania St',
+          city: 'Honolulu, HI 96817',
+        },
+        {
+          name: 'Cultural Plaza',
+          street: '100 N Beretania St',
+          city: 'Honolulu, HI 96817',
+        },
+        {
+          name: 'Cultural Plaza',
+          street: '100 N Beretania St',
+          city: 'Honolulu, HI 96817',
+        },
+      ],
     };
+  },
+  methods: {
+    openLocation(index) {
+      window.open(`https://www.google.com//maps?q=${this.locations[index].name} ${this.locations[index].street}, ${this.locations[index].city}`);
+    },
   },
 };
 </script>
