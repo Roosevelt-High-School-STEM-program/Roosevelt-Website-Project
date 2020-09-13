@@ -9,6 +9,7 @@
 <!--              src="../statics/icons/HonoluluBakingLogoBlackWhite.png"-->
 <!--              @click="teleport('#opening-screen')"-->
 <!--            />-->
+<!--            TODO await opinions from the baking comp-->
             <q-img
               style="height:46px; width:227px; cursor: pointer;"
               src="../statics/icons/BlackWhiteContactLogo.png"
