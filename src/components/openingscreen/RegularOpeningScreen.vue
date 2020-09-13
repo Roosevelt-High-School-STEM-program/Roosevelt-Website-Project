@@ -1,16 +1,16 @@
 <template>
   <div class="row">
-    <div class="col-md-12 column" style="height:720px">
+    <div class="col-md-12 col-sm-12 col-xs column" style="height:720px">
       <div
-        class="col-md-12 row"
+        class="col-md-12 col-sm-12 col-xs row"
         id="front-page-image"
       >
         <div
-          class="col-md-12 row items-center justify-center"
+          class="col-md-12 col-sm-12 col-xs row items-center justify-center"
           style="background-color: rgba(0, 0, 0, 0.6);"
         >
-          <div class="col-md-5 no-hightlight text-white text-center" >
-            <h1>Honolulu Baking Company</h1>
+          <div class="col-md-5 col-sm-7 col-xs no-hightlight text-white text-center" >
+            <h1 :style="$q.screen.lt.sm ? 'font-size:70px' : ''">Honolulu Baking Company</h1>
           </div>
         </div>
       </div>
