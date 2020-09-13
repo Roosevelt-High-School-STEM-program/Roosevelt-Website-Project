@@ -2,9 +2,9 @@
   <q-page>
     <regular-opening-screen id="opening-screen" />
     <regular-about id="about"/>
-    <regular-workers-screen id="ohana"/>
-    <products id="products" />
-    <regular-contact-us id="contact-us" />
+    <regular-workers-screen />
+    <products id="brands" />
+    <regular-contact-us />
   </q-page>
 </template>
 
@@ -32,6 +32,11 @@ export default {
       if (divPosition < 0) {
         window.scroll({
           top: divPosition,
+          behavior: 'smooth',
+        });
+      } else if (this.$q.screen.sm || this.$q.screen.lt.sm) {
+        window.scroll({
+          top: divPosition - 189,
           behavior: 'smooth',
         });
       } else {
