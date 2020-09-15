@@ -28,11 +28,11 @@
           src="../../statics/people-photos/worker-1.jpeg"
         />
         <div class="col-md-7 col-xs-12 offset-md-1" style="height:360px">
-          <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-lg' : 'q-my-lg q-ml-md'">
+          <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-sm' : 'q-my-lg q-ml-md'">
             <h1
               class="q-my-none text-weight-bolder text-center"
               :style="$q.screen.sm || $q.screen.lt.sm
-               ? 'font-size: 28px; height:80px': 'font-size: 32px'"
+               ? 'font-size: 25px; height:80px': 'font-size: 32px'"
             >
               First Name Last Name
             </h1>
@@ -59,11 +59,11 @@
         style="min-height:360px"
       >
         <div class="col-md-7 col-xs-12 offset-md-1" style="min-height:360px">
-          <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-lg' : 'q-my-lg q-ml-md'">
+          <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-sm' : 'q-my-lg q-ml-md'">
             <h1
               class="q-my-none text-weight-bolder text-center"
               :style="$q.screen.sm || $q.screen.lt.sm
-               ? 'font-size: 28px; height:80px': 'font-size: 32px'"
+               ? 'font-size: 25px; height:80px': 'font-size: 32px'"
             >
               First Name Last Name
             </h1>
@@ -97,11 +97,11 @@
           src="../../statics/people-photos/worker-3.jpeg"
         />
         <div class="col-md-7 col-xs-12 offset-md-1" style="height:360px">
-          <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-lg' : 'q-my-lg q-ml-md'">
+          <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-sm' : 'q-my-lg q-ml-md'">
             <h1
               class="q-my-none text-weight-bolder text-center"
               :style="$q.screen.sm || $q.screen.lt.sm
-               ? 'font-size: 28px; height:80px': 'font-size: 32px'"
+               ? 'font-size: 25px; height:80px': 'font-size: 32px'"
             >
               First Name Last Name
             </h1>
