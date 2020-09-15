@@ -2,6 +2,7 @@
   <q-page>
     <regular-opening-screen id="opening-screen" />
     <regular-about id="about"/>
+    <certification-banner />
     <regular-workers-screen />
     <products id="brands" />
     <regular-contact-us />
@@ -12,12 +13,14 @@
 import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
 import RegularAbout from '../components/aboutus/RegularAbout';
 import RegularContactUs from '../components/contactus/RegularContactUs';
-import RegularWorkersScreen from '../components/workersscreen/RegularWorkersScreen';
+import RegularWorkersScreen from '../components/aboutus/RegularWorkersScreen';
 import Products from '../pages/Products';
+import CertificationBanner from './CertificationBanner';
 
 export default {
   name: 'Index',
   components: {
+    CertificationBanner,
     RegularOpeningScreen,
     RegularAbout,
     RegularContactUs,
