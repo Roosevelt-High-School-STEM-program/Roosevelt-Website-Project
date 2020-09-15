@@ -14,8 +14,12 @@
       >
         About Us
       </h1>
-      <p :class="$q.screen.sm || $q.screen.lt.sm ?
-       '' : 'q-mt-sm'" style="font-size:19px; font-family: 'Anaheim'">
+      <p
+        :class="$q.screen.sm || $q.screen.lt.sm
+          ?'' : 'q-mt-sm'"
+        :style="$q.screen.sm || $q.screen.lt.sm
+        ? 'font-size:17px; font-family: Anaheim' : 'font-size:19px; font-family: Anaheim'"
+      >
         It is a long established fact that a reader will be distracted by
         the readable content of a page when looking at its layout. The point of using Lorem I
         psum is that it has a more-or-less normal distribution of letters, as opposed to using

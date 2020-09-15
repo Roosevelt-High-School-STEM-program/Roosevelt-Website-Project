@@ -5,14 +5,14 @@
     <certification-banner />
     <regular-workers-screen />
     <products id="brands" />
-    <regular-contact-us />
+<!--    <regular-contact-us />-->
   </q-page>
 </template>
 
 <script>
 import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
 import RegularAbout from '../components/aboutus/RegularAbout';
-import RegularContactUs from '../components/contactus/RegularContactUs';
+// import RegularContactUs from '../components/contactus/RegularContactUs';
 import RegularWorkersScreen from '../components/aboutus/RegularWorkersScreen';
 import Products from '../pages/Products';
 import CertificationBanner from './CertificationBanner';
@@ -23,7 +23,7 @@ export default {
     CertificationBanner,
     RegularOpeningScreen,
     RegularAbout,
-    RegularContactUs,
+    // RegularContactUs,
     RegularWorkersScreen,
     Products,
   },

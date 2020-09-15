@@ -1,12 +1,12 @@
 <template>
   <div class="row justify-center bg-white q-pb-lg">
-    <div class="row justify-center items-center col-md-12 q-my-md">
-      <div class="col-md-3" />
-      <div class="col-md-3 q-mt-md">
+    <div class="row justify-center items-center col-md-12 col-xs-12 q-my-md">
+      <div class="col-md-3 col-xs-2" />
+      <div class="col-md-3 col-xs-8 q-mt-md">
         <q-img src="../../statics/Ohana2.png" />
       </div>
-      <div class="col-md-3" />
-      <div class="col-md-7 q-my-lg">
+      <div class="col-md-3 col-xs-2" />
+      <div class="col-md-7 col-xs-11 q-my-lg">
         <q-img
           style="background-position: center; box-shadow: 5px 5px 5px grey;"
           :ratio="870/506"
@@ -17,21 +17,22 @@
 
     <div class="col-md-12 q-mt-lg" />
     <div
-      class="row col-md-10 justify-center worker-headers"
+      class="row col-md-10 col-xs-12 justify-center worker-headers"
     >
       <div
-        class="col-md-12 q-my-lg row items-center"
-        style="height:360px"
+        class="col-md-12 col-xs-8 q-my-lg row items-center"
+        style="min-height:360px"
       >
         <q-img
-          class="worker-image"
+          :class="$q.screen.sm || $q.screen.lt.sm ? 'smaller-worker-image' : 'worker-image'"
           src="../../statics/people-photos/worker-1.jpeg"
         />
-        <div class="col-md-7 offset-1" style="height:360px">
-          <div class="q-my-lg q-ml-md">
+        <div class="col-md-7 col-xs-12 offset-md-1" style="height:360px">
+          <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-lg' : 'q-my-lg q-ml-md'">
             <h1
               class="q-my-none text-weight-bolder text-center"
-              style="font-size: 32px"
+              :style="$q.screen.sm || $q.screen.lt.sm
+               ? 'font-size: 28px; height:80px': 'font-size: 32px'"
             >
               First Name Last Name
             </h1>
@@ -39,25 +40,30 @@
           </div>
           <div>
             <p
-              class="col-md-5 q-ml-md q-mt-md worker-description"
+              class="col-md-5 col-xs q-ml-md q-mt-md worker-description"
+              :style="$q.screen.sm || $q.screen.lt.sm
+               ? 'font-size: 15px;' : ' '"
             >
               This worker is incredible. I'm truly amazed by their performance.
               This worker is incredible. I'm truly amazed by their performance. LIke truly wow
               This worker is incredible. I'm truly amazed by their performance.
               This worker is incredible. I'm truly amazed by their performance.
             </p>
-          </div >
+          </div>
         </div>
       </div>
       <div
-        class="col-md-12 q-mt-lg row items-center"
-        style="height:360px"
+        :class="$q.screen.sm || $q.screen.lt.sm
+          ? 'col-md-12 col-xs-8 row items-center'
+          : 'col-md-12 col-xs-8 q-my-lg row items-center'"
+        style="min-height:360px"
       >
-        <div class="col-md-7 offset-1" style="height:360px">
-          <div class="q-my-lg q-ml-md">
+        <div class="col-md-7 col-xs-12 offset-md-1" style="min-height:360px">
+          <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-lg' : 'q-my-lg q-ml-md'">
             <h1
               class="q-my-none text-weight-bolder text-center"
-              style="font-size: 32px"
+              :style="$q.screen.sm || $q.screen.lt.sm
+               ? 'font-size: 28px; height:80px': 'font-size: 32px'"
             >
               First Name Last Name
             </h1>
@@ -65,33 +71,37 @@
           </div>
           <div>
             <p
-              class="col-md-5 q-mt-md q-ml-md worker-description"
+              class="col-md-5 col-xs q-ml-md q-mt-md worker-description"
+              :style="$q.screen.sm || $q.screen.lt.sm
+               ? 'font-size: 15px;' : ' '"
             >
               This worker is incredible. I'm truly amazed by their performance.
               This worker is incredible. I'm truly amazed by their performance. LIke truly wow
               This worker is incredible. I'm truly amazed by their performance.
               This worker is incredible. I'm truly amazed by their performance.
             </p>
-          </div >
+          </div>
         </div>
         <q-img
-          class="q-ml-md offset-1 worker-image"
+          :class="$q.screen.sm || $q.screen.lt.sm
+          ? 'smaller-worker-image order-first' : 'worker-image offset-1 '"
           src="../../statics/people-photos/worker-2.jpeg"
         />
       </div>
       <div
-        class="col-md-12 q-my-lg row items-center"
-        style="height:360px"
+        class="col-md-12 col-xs-8 q-my-lg row items-center"
+        style="min-height:360px"
       >
         <q-img
-          class="worker-image"
+          :class="$q.screen.sm || $q.screen.lt.sm ? 'smaller-worker-image' : 'worker-image'"
           src="../../statics/people-photos/worker-3.jpeg"
         />
-        <div class="col-md-7 offset-1" style="height:360px">
-          <div class="q-my-lg q-ml-md">
+        <div class="col-md-7 col-xs-12 offset-md-1" style="height:360px">
+          <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-lg' : 'q-my-lg q-ml-md'">
             <h1
               class="q-my-none text-weight-bolder text-center"
-              style="font-size: 32px"
+              :style="$q.screen.sm || $q.screen.lt.sm
+               ? 'font-size: 28px; height:80px': 'font-size: 32px'"
             >
               First Name Last Name
             </h1>
@@ -99,14 +109,16 @@
           </div>
           <div>
             <p
-              class="col-md-5 q-ml-md q-mt-md worker-description"
+              class="col-md-5 col-xs q-ml-md q-mt-md worker-description"
+              :style="$q.screen.sm || $q.screen.lt.sm
+               ? 'font-size: 15px;' : ' '"
             >
               This worker is incredible. I'm truly amazed by their performance.
               This worker is incredible. I'm truly amazed by their performance. LIke truly wow
               This worker is incredible. I'm truly amazed by their performance.
               This worker is incredible. I'm truly amazed by their performance.
             </p>
-          </div >
+          </div>
         </div>
       </div>
     </div>
@@ -124,6 +136,11 @@ export default {
   .worker-image {
     width: 300px;
     height: 360px;
+    box-shadow: 5px 5px 5px grey;
+  }
+  .smaller-worker-image {
+    width: 260px;
+    height: 320px;
     box-shadow: 5px 5px 5px grey;
   }
   .worker-description {
