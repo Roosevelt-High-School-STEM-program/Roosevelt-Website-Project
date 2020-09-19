@@ -8,7 +8,8 @@
       <div class="col-md-3 col-xs-2" />
       <div class="col-md-7 col-xs-11 q-my-lg">
         <q-img
-          style="background-position: center; box-shadow: 5px 5px 5px grey;"
+          class="float-image"
+          style="background-position: center;"
           :ratio="870/506"
           src="../../statics/people-photos/groupPic.jpeg"
         />
@@ -16,9 +17,7 @@
     </div>
 
     <div class="col-md-12 q-mt-lg" />
-    <div
-      class="row col-md-10 col-sm-12 col-xs-12 justify-center worker-headers"
-    >
+    <div class="row col-md-10 col-sm-12 col-xs-12 justify-center worker-headers">
       <div
         class="col-md-12 col-xs-10 col-sm-9 row justify-center items-center"
         style="min-height:360px"
@@ -43,8 +42,8 @@
           </div>
           <p
             class="q-ml-md q-mt-md worker-description"
-            :style="$q.screen.sm || $q.screen.lt.sm
-             ? 'font-size: 16px;' : ' '"
+            :style="$q.screen.lt.sm
+             ? 'font-size: 17px;' : ' '"
           >
             This worker is incredible. I'm truly amazed by their performance.
             This worker is incredible. I'm truly amazed by their performance. LIke truly wow
@@ -73,8 +72,8 @@
           </div>
           <p
             class="q-ml-md q-mt-md worker-description"
-            :style="$q.screen.sm || $q.screen.lt.sm
-             ? 'font-size: 16px;' : ' '"
+            :style="$q.screen.lt.sm
+             ? 'font-size: 17px;' : ' '"
           >
             This worker is incredible. I'm truly amazed by their performance.
             This worker is incredible. I'm truly amazed by their performance. LIke truly wow
@@ -112,8 +111,8 @@
           </div>
           <p
             class="q-ml-md q-mt-md worker-description"
-            :style="$q.screen.sm || $q.screen.lt.sm
-             ? 'font-size: 16px;' : ' '"
+            :style="$q.screen.lt.sm
+             ? 'font-size: 17px;' : ' '"
           >
             This worker is incredible. I'm truly amazed by their performance.
             This worker is incredible. I'm truly amazed by their performance. LIke truly wow

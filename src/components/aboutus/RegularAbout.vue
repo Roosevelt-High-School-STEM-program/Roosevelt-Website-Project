@@ -4,21 +4,18 @@
     style="min-height:520px"
   >
     <div class="col-md-1 col-xs-8 q-mt-none" />
-    <div
-      class="col-md-4 col-xs-11 text-center"
-      style="font-family: Alegreya Sans SC, cursive;"
-    >
+    <div class="col-md-4 col-xs-11 text-center">
       <h1
         class="q-my-none text-weight-bold"
-        style="font-size: 45px; letter-spacing: 2px"
+        style="font-size: 45px; letter-spacing: 2px;"
       >
         About Us
       </h1>
       <p
         :class="$q.screen.sm || $q.screen.lt.sm
           ?'' : 'q-mt-sm'"
-        :style="$q.screen.sm || $q.screen.lt.sm
-        ? 'font-size:17px; font-family: Anaheim' : 'font-size:19px; font-family: Anaheim'"
+        :style="$q.screen.lt.sm
+        ? 'font-size:17px;' : 'font-size:19px;'"
       >
         It is a long established fact that a reader will be distracted by
         the readable content of a page when looking at its layout. The point of using Lorem I
@@ -29,8 +26,7 @@
     <div class="col-md-2" />
     <div
       :class="$q.screen.sm || $q.screen.lt.sm ?
-        'row justify-center col-xs-8 col-sm-12 order-first q-mt-lg'
-        : 'col-md-2 '"
+        'row justify-center col-xs-8 col-sm-12 order-first q-mt-lg' : 'col-md-2 '"
     >
       <q-img
         class="float-image"
@@ -51,5 +47,10 @@ export default {
 </script>
 
 <style scoped>
-
+  h1 {
+    font-family: Alegreya Sans SC, cursive;
+  }
+  p {
+    font-family: Anaheim;
+  }
 </style>

@@ -1,11 +1,5 @@
 <template>
-  <div
-    class="row"
-    style="
-      height: 205px;
-      background-image: url('../../statics/food-pictures/oatMeatSpreadOut.JPG');
-      background-size:cover;"
-  >
+  <div class="row certificate-background">
     <div
       class="row justify-center items-center col-md-12"
       style="background-color: rgba(20, 15, 15, 0.6);"
@@ -49,5 +43,9 @@ export default {
 </script>
 
 <style scoped>
-
+  .certificate-background {
+    height: 205px;
+    background-image: url('../../statics/food-pictures/oatMeatSpreadOut.jpg');
+    background-size:cover;
+  }
 </style>
