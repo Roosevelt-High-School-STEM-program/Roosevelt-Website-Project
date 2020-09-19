@@ -27,16 +27,20 @@
       </p>
     </div>
     <div class="col-md-2" />
-    <div :class="$q.screen.sm || $q.screen.lt.sm ?
-     'row col-md-4 col-xs-8 order-first q-mt-lg' : 'row col-md-4 col-xs-10'"
+    <div
+      :class="$q.screen.sm || $q.screen.lt.sm ?
+        'row justify-center col-xs-8 col-sm-12 order-first q-mt-lg'
+        : 'col-md-2 '"
     >
       <q-img
         class="float-image"
-        style="max-width:320px"
+        :style="$q.screen.sm || $q.screen.lt.sm ? 'max-width:280px' : 'max-width:320px'"
         src="../../statics/food-pictures/oatCakeTopDown.png"
       />
     </div>
+    <div class="col-md-2"/>
   </div>
+
 </template>
 
 <script>

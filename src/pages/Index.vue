@@ -1,9 +1,7 @@
 <template>
   <q-page>
     <regular-opening-screen id="opening-screen" />
-    <regular-about id="about"/>
-    <certification-banner />
-    <regular-workers-screen />
+    <about id="about"/>
     <products id="brands" />
 <!--    <regular-contact-us />-->
   </q-page>
@@ -11,20 +9,17 @@
 
 <script>
 import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
-import RegularAbout from '../components/aboutus/RegularAbout';
 // import RegularContactUs from '../components/contactus/RegularContactUs';
-import RegularWorkersScreen from '../components/aboutus/RegularWorkersScreen';
 import Products from '../pages/Products';
-import CertificationBanner from './CertificationBanner';
+import About from './About';
+
 
 export default {
   name: 'Index',
   components: {
-    CertificationBanner,
+    About,
     RegularOpeningScreen,
-    RegularAbout,
     // RegularContactUs,
-    RegularWorkersScreen,
     Products,
   },
   methods: {
