@@ -52,7 +52,7 @@
 
 <script>
 export default {
-  name: 'MobileCertficationBanner',
+  name: 'MobileCertificationBanner',
   data() {
     return {
       slide: 1,
