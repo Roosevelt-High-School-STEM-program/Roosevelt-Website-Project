@@ -1,84 +1,40 @@
 <template>
-  <div class="row bg-white" style="min-height:800px;">
-      <div
-        class="row justify-center items-center"
-        style="height:513px"
+  <div
+    class="row justify-center items-center bg-white"
+    style="min-height:520px"
+  >
+    <div class="col-md-1 col-xs-8 q-mt-none" />
+    <div class="col-md-4 col-xs-11 text-center">
+      <h1
+        class="q-my-none text-weight-bold"
+        style="font-size: 45px; letter-spacing: 2px;"
       >
-        <div class="col-md-1 q-mt-none" />
-          <div
-            class="col-md-4 text-center"
-            style="font-family: Alegreya Sans SC, cursive;"
-          >
-            <h1
-              class="q-my-none text-weight-bold"
-              style="font-size: 45px; letter-spacing: 2px"
-            >
-              About Us
-            </h1>
-            <p class="q-mt-sm" style="font-size:19px; font-family: 'Anaheim'">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The point of using Lorem I
-              psum is that it has a more-or-less normal distribution of letters, as opposed to using
-              'Content here, content here', making it look like r
-              eadable English. Many desktop publishing packages and web pa
-              ge editors now use Lorem Ipsum as their default model text,
-              and a search for 'lorem ipsum' will uncover many web sites stil
-              l in their infancy. Various versions have evolved over the years,
-              sometimes by accident, sometimes on purpose (injected humour and
-              the like).
-            </p>
-          </div>
-          <div class="col-md-2" />
-          <div class="row col-md-4">
-            <q-img
-              class="float-image"
-              style="max-width:320px"
-              src="../../statics/food-pictures/oatCakeTopDown.png"
-            />
-        </div>
-      </div>
-    <div
-      class="row col-md-12"
-      style="
-      background-image: url('../../statics/food-pictures/oatMeatSpreadOut.JPG');
-      background-size:cover;
-      background-color: rgba(0, 0, 0, 0.6);"
-    >
-      <div
-        class="row justify-center items-center col-md-12"
-        style="background-color: rgba(20, 15, 15, 0.6);"
+        About Us
+      </h1>
+      <p
+        :class="$q.screen.sm || $q.screen.lt.sm ? '' : 'q-mt-sm'"
+        :style="$q.screen.lt.sm ? 'font-size:17px;' : 'font-size:19px;'"
       >
-      <div
-        class="row justify-center col-md-4 text-center"
-        style="letter-spacing: 2px;"
-      >
-          <p
-            class="text-weight-bold text-white no-hightlight"
-            style="font-size: 33px;
-            font-family: Alegreya Sans SC;
-            text-align: center;"
-          >
-            Here at Honolulu
-            <br>
-            Baking Company, We are
-          </p>
-      </div>
-      <div class="col-md-1" />
-      <div class="col-md-3">
-        <q-img
-          style="max-width: 120px;"
-          src="../../statics/cert/USDA&FDAWhite.png"
-        />
-      </div>
-      <div class="col-md-3">
-        <q-img
-          style="max-width: 270px;"
-          src="../../statics/cert/Military&state&SQF2White.png"
-        />
-      </div>
-      </div>
+        It is a long established fact that a reader will be distracted by
+        the readable content of a page when looking at its layout. The point of using Lorem I
+        psum is that it has a more-or-less normal distribution of letters, as opposed to using
+        'Content here, content here', making it look like readable English.
+      </p>
     </div>
+    <div class="col-md-2" />
+    <div
+      :class="$q.screen.sm || $q.screen.lt.sm ?
+        'row justify-center col-xs-8 col-sm-12 order-first q-mt-lg' : 'col-md-2 '"
+    >
+      <q-img
+        class="float-image"
+        :style="$q.screen.sm || $q.screen.lt.sm ? 'max-width:280px' : 'max-width:320px'"
+        src="../../statics/food-pictures/oatCakeTopDown.png"
+      />
+    </div>
+    <div class="col-md-2"/>
   </div>
+
 </template>
 
 <script>
@@ -89,5 +45,10 @@ export default {
 </script>
 
 <style scoped>
-
+  h1 {
+    font-family: Alegreya Sans SC, cursive;
+  }
+  p {
+    font-family: Anaheim;
+  }
 </style>
