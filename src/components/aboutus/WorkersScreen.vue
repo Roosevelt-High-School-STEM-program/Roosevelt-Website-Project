@@ -26,9 +26,7 @@
           :class="$q.screen.sm || $q.screen.lt.sm ? 'smaller-worker-image' : 'worker-image'"
           src="../../statics/people-photos/worker-1.jpeg"
         />
-        <div
-          class="offset-lg-1 col-lg-7 col-sm-12 col-xs-12 q-mb-lg"
-        >
+        <div class="offset-lg-1 col-lg-7 col-sm-12 col-xs-12 q-mb-lg">
           <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-sm' : 'q-my-lg q-ml-md'">
             <h1
               class="q-my-none text-weight-bolder text-center"
@@ -41,8 +39,7 @@
           </div>
           <p
             class="q-ml-sm q-mt-md anaheim"
-            :style="$q.screen.lt.sm
-             ? 'font-size: 17px;' : 'font-size: 19px;'"
+            :style="$q.screen.lt.sm ? 'font-size: 17px;' : 'font-size: 19px;'"
           >
             This worker is incredible. I'm truly amazed by their performance.
             This worker is incredible. I'm truly amazed by their performance. LIke truly wow
@@ -55,9 +52,7 @@
         class="col-lg-12 col-xs-10 col-sm-9 row justify-center items-center"
         style="min-height:360px"
       >
-        <div
-          class="offset-lg-1 col-lg-7 col-sm-12 col-xs-12 q-mb-lg"
-        >
+        <div class="offset-lg-1 col-lg-7 col-sm-12 col-xs-12 q-mb-lg">
           <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-sm' : 'q-my-lg q-ml-md'">
             <h1
               class="q-my-none text-weight-bolder text-center"
@@ -70,8 +65,7 @@
           </div>
           <p
             class="q-ml-sm q-mt-md anaheim"
-            :style="$q.screen.lt.sm
-             ? 'font-size: 17px;' : 'font-size: 19px;'"
+            :style="$q.screen.lt.sm ? 'font-size: 17px;' : 'font-size: 19px;'"
           >
             This worker is incredible. I'm truly amazed by their performance.
             This worker is incredible. I'm truly amazed by their performance. LIke truly wow
@@ -93,9 +87,7 @@
           :class="$q.screen.sm || $q.screen.lt.sm ? 'smaller-worker-image' : 'worker-image'"
           src="../../statics/people-photos/worker-3.jpeg"
         />
-        <div
-          class="offset-lg-1 col-lg-7 col-sm-12 col-xs-12"
-        >
+        <div class="offset-lg-1 col-lg-7 col-sm-12 col-xs-12">
           <div :class="$q.screen.sm || $q.screen.lt.sm ? 'q-my-sm' : 'q-my-lg q-ml-md'">
             <h1
               class="q-my-none text-weight-bolder text-center"
@@ -108,8 +100,7 @@
           </div>
           <p
             class="q-ml-sm q-mt-md anaheim"
-            :style="$q.screen.lt.sm
-             ? 'font-size: 17px;' : 'font-size: 19px;'"
+            :style="$q.screen.lt.sm ? 'font-size: 17px;' : 'font-size: 19px;'"
           >
             This worker is incredible. I'm truly amazed by their performance.
             This worker is incredible. I'm truly amazed by their performance. LIke truly wow
@@ -126,29 +117,6 @@
 <script>
 export default {
   name: 'RegularWorkersScreen',
-  computed: {
-    resizingMargin() {
-      if (this.$q.screen.gt.sm) {
-        return 'row justify-center bg-white q-mb-xl';
-      }
-      return 'row justify-center bg-white';
-    },
-    descriptionDivSize() {
-      if (this.$q.screen.gt.sm || this.$q.screen.sm) {
-        return '';
-      }
-      if (this.$q.screen.lt.sm) {
-        return '';
-      }
-      if (this.$q.screen.sm) {
-        return 'min-height:270px';
-      }
-      if (this.$q.screen.lg) {
-        return 'min-height:270px';
-      }
-      return '';
-    },
-  },
 };
 </script>
 

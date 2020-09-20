@@ -4,7 +4,9 @@
       <q-img src="../../src/statics/Products2.png"></q-img>
     </div>
     <bakery class="col-md-12" />
-<!--    <div class="q-mx-xl q-my-xl col black-border" />-->
+    <!-- covert to a component -->
+    <div class="q-mx-xl q-my-xl col black-border" />
+    <bakery class="col-md-12 q-mb-xl" />
 <!--    <hand-cut-produce class="col-md-12 col-md-12 q-mb-xl" />-->
   </div>
 </template>
@@ -28,5 +30,4 @@ export default {
     font-family: Alegreya Sans SC;
     letter-spacing: 2px;
   }
-
 </style>

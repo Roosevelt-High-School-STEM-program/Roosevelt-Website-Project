@@ -1,6 +1,6 @@
 <template>
   <q-carousel
-    :style="carouselSize"
+    :style="resizableCarousel"
     class="q-ml-lg q-mt-lg q-mr-lg order-second float-image"
     animated
     v-model="slide"
@@ -16,8 +16,8 @@
       :img-src="photos[0]"
       style="background-size: cover"
     >
-      <div class="absolute-top custom-caption">
-        <div :class="this.$q.screen.lt.sm ? 'text-h4' : 'text-h2'">
+      <div class="absolute-top custom-caption text-weight-bold">
+        <div :class="resizableHeader">
           <slot name="picture-name1" />
         </div>
       </div>
@@ -28,7 +28,7 @@
       style="background-size: cover"
     >
       <div class="absolute-top custom-caption">
-        <div :class="this.$q.screen.lt.sm ? 'text-h4' : 'text-h2'">
+        <div :class="resizableHeader">
           <slot name="picture-name2" />
         </div>
       </div>
@@ -39,7 +39,7 @@
       style="background-size: cover"
     >
       <div class="absolute-top custom-caption">
-        <div :class="this.$q.screen.lt.sm ? 'text-h4' : 'text-h2'">
+        <div :class="resizableHeader">
           <slot name="picture-name3" />
         </div>
       </div>
@@ -62,7 +62,7 @@ export default {
     };
   },
   computed: {
-    carouselSize() {
+    resizableCarousel() {
       if (this.$q.screen.gt.sm && this.$q.screen.lt.lg) {
         return 'height: 450px;';
       }
@@ -70,6 +70,9 @@ export default {
         return 'height: 320px';
       }
       return 'height: 550px';
+    },
+    resizableHeader() {
+      return this.$q.screen.lt.sm ? 'text-h4' : 'text-h3';
     },
   },
 };
@@ -81,5 +84,6 @@ export default {
     padding: 12px;
     color: white;
     background-color: rgba(0, 0, 0, .3);
+    font-family: Alegreya Sans SC, cursive;
   }
 </style>

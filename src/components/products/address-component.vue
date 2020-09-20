@@ -23,7 +23,7 @@
         </p>
       </div>
     </div>
-    <div :class="$q.screen.xl ? 'q-ml-xl': 'q-ml-lg col-xs-1 col-sm-1 col-md-1'">
+    <div :class="$q.screen.xl ? 'q-ml-lg': 'q-ml-lg col-xs-1 col-sm-1 col-md-1'">
       <q-btn flat icon="directions" @click="$emit('on-submit')" />
     </div>
     <div class="col-md-1 col-sm-2 col-xs-1" />

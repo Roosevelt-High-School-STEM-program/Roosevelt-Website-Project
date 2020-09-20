@@ -2,7 +2,7 @@
   <div>
     <about-us class="q-mt-md" id="about"/>
     <certification-banner class="q-mt-md" />
-    <workers-screen class="$q.screen.gt.sm ? '' : 'q-mb-xl'" />
+    <workers-screen />
   </div>
 </template>
 
@@ -20,7 +20,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-
-</style>

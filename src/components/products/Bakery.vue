@@ -1,5 +1,5 @@
 <template>
-  <div style="min-height: 800px">
+  <div>
     <div class="row">
       <div class="col-md"></div>
       <div class="col-lg-5 col-md-12 col-xs-12">
@@ -35,7 +35,7 @@
           <address-component
             v-for="(location, index) in locations"
             :key="index"
-            :class="resizableMarginAddresses" @on-submit="openLocation(x)"
+            :class="resizableMarginAddresses" @on-submit="openLocation(index)"
           >
             <template v-slot:name>{{ locations[index].name }}</template>
             <template v-slot:street>{{ locations[index].street }}</template>
@@ -44,7 +44,6 @@
         </div>
       </div>
       <div class="col-md"/>
-<!--      // col-md-6  col-sm order-second-->
       <picture-slides
         v-show="!($q.screen.lt.lg)"
         class="col-lg-6"
@@ -106,22 +105,13 @@ export default {
   },
   computed: {
     resizableFont() {
-      if (this.$q.screen.lt.sm) {
-        return 'font-size:17px;';
-      }
-      return 'font-size:19px;';
+      return this.$q.screen.lt.sm ? 'font-size:17px;' : 'font-size:19px;';
     },
     resizableHeadersFont() {
-      if (this.$q.screen.lt.sm) {
-        return 'font-size: 45px;';
-      }
-      return '';
+      return this.$q.screen.lt.sm ? 'font-size: 45px;' : '';
     },
     resizableMarginDescription() {
-      if (this.$q.screen.sm || this.$q.screen.lt.sm) {
-        return 'q-mt-lg q-mx-xl anaheim';
-      }
-      return 'q-mt-xl q-mx-xl anaheim';
+      return this.$q.screen.sm || this.$q.screen.lt.sm ? 'q-mt-lg q-mx-xl anaheim' : 'q-mt-xl q-mx-xl anaheim';
     },
     resizableMarginCarousel() {
       if (this.$q.screen.gt.sm && this.$q.screen.lt.lg) {
@@ -133,10 +123,7 @@ export default {
       return 'col-sm-12 q-mt-xl';
     },
     resizableMarginAddresses() {
-      if (this.$q.screen.sm || this.$q.screen.lt.sm) {
-        return 'col-md-6 col-sm-6 col-xs-11 q-mb-sm';
-      }
-      return 'col-md-6 col-sm-6 col-xs-11 q-mt-lg';
+      return this.$q.screen.sm || this.$q.screen.lt.sm ? 'col-md-6 col-sm-6 col-xs-11 q-mt-lg' : 'col-md-6 col-sm-6 col-xs-11 q-mb-sm';
     },
   },
 };
