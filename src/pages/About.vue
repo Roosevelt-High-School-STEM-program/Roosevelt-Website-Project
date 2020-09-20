@@ -1,26 +1,22 @@
 <template>
   <div>
-    <regular-about class="q-mt-md" id="about"/>
+    <about-us class="q-mt-md" id="about"/>
     <certification-banner class="q-mt-md" />
-    <regular-workers-screen />
+    <workers-screen />
   </div>
 </template>
 
 <script>
-import RegularAbout from '../components/aboutus/RegularAbout';
+import AboutUs from '../components/aboutus/AboutUs';
 import CertificationBanner from './CertificationBanner';
-import RegularWorkersScreen from '../components/aboutus/RegularWorkersScreen';
+import WorkersScreen from '../components/aboutus/WorkersScreen';
 
 export default {
   name: 'About',
   components: {
-    RegularAbout,
+    AboutUs,
     CertificationBanner,
-    RegularWorkersScreen,
+    WorkersScreen,
   },
 };
 </script>
-
-<style scoped>
-
-</style>

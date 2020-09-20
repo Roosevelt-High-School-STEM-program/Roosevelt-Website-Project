@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-md-12 col-sm-12 col-xs column" style="height:720px">
+    <div class="col-md-12 col-sm-12 col-xs column" style="height:95vh">
       <div
         class="col-md-12 col-sm-12 col-xs row"
         id="front-page-image"

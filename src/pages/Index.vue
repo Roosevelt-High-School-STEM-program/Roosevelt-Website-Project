@@ -3,23 +3,22 @@
     <regular-opening-screen id="opening-screen" />
     <about id="about"/>
     <products id="brands" />
-<!--    <regular-contact-us />-->
+    <regular-contact-us />
   </q-page>
 </template>
 
 <script>
 import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
-// import RegularContactUs from '../components/contactus/RegularContactUs';
+import RegularContactUs from '../components/contactus/RegularContactUs';
 import Products from '../pages/Products';
 import About from './About';
-
 
 export default {
   name: 'Index',
   components: {
     About,
     RegularOpeningScreen,
-    // RegularContactUs,
+    RegularContactUs,
     Products,
   },
   methods: {
@@ -32,9 +31,14 @@ export default {
           top: divPosition,
           behavior: 'smooth',
         });
-      } else if (this.$q.screen.sm || this.$q.screen.lt.sm) {
+      } else if (this.$q.screen.sm) {
         window.scroll({
-          top: divPosition - 189,
+          top: divPosition - 65,
+          behavior: 'smooth',
+        });
+      } else if (this.$q.screen.lt.sm) {
+        window.scroll({
+          top: divPosition - 210,
           behavior: 'smooth',
         });
       } else {
@@ -53,7 +57,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-
-</style>

@@ -1,81 +1,58 @@
 <template>
-  <div style="height: 800px">
+  <div>
     <div class="row">
-      <div class="col"></div>
-      <div class="col-md-5">
+      <div class="col-md"></div>
+      <div class="col-lg-5 col-md-12 col-xs-12">
         <h1
           class="q-ml-lg q-my-none text-weight-bolder title"
+          :style="resizableHeadersFont"
         >
           Bakery
         </h1>
-        <div class="q-my-md q-mx-lg" style="border-bottom:1px black solid;" />
-        <p class="q-mt-xl q-mx-xl" style="font-size:19px; font-family: 'Anaheim'">
+        <div class="q-my-md q-mx-lg black-border" />
+        <p :class="resizableMarginDescription" :style="resizableFont">
           It is a long established fact that a reader will be distracted by
           the readable content of a page when looking at its layout. The point of using Lorem I
           psum is that it has a more-or-less normal distribution of letters, as opposed to using
-          'Content here, content here', making it look like r
-          eadable English. Many desktop publishing packages and web pa
-          ge editors now use Lorem Ipsum as their default model text,
         </p>
+        <picture-slides
+          v-show="$q.screen.sm || $q.screen.lt.lg"
+          :class="resizableMarginCarousel"
+          :photos="photos"
+        >
+          <template v-slot:picture-name1>Lemon Scone</template>
+          <template v-slot:picture-name2>Blueberry Scone</template>
+          <template v-slot:picture-name3>Blueberry Scone</template>
+        </picture-slides>
         <h1
-          class="q-ml-lg q-mb-none q-mt-xl text-weight-bolder title"
+          class="q-ml-lg q-mb-none q-mt-lg text-weight-bolder title"
+          :style="resizableHeadersFont"
         >
           Where to Find it
         </h1>
-        <div class="q-my-md q-mx-lg" style="border-bottom:1px black solid;" />
-
+        <div class="q-mb-md q-mx-lg black-border" />
         <div class="row q-ma-md">
           <address-component
-            v-for="(location, x) in locations"
-            :key="x"
-            class="col-md-6 q-mt-lg" @on-submit="openLocation(x)"
+            v-for="(location, index) in locations"
+            :key="index"
+            :class="resizableMarginAddresses" @on-submit="openLocation(index)"
           >
-            <template v-slot:name>{{ locations[x].name }}</template>
-            <template v-slot:street>{{ locations[x].street }}</template>
-            <template v-slot:city>{{ locations[x].city }}</template>
+            <template v-slot:name>{{ locations[index].name }}</template>
+            <template v-slot:street>{{ locations[index].street }}</template>
+            <template v-slot:city>{{ locations[index].city }}</template>
           </address-component>
         </div>
       </div>
-      <div class="col"/>
-      <q-carousel
-        style="height:550px"
-        class="q-ml-lg q-mt-lg q-mr-lg col-md-6 float-image"
-        animated
-        v-model="slide"
-        transition-prev="slide-right"
-        transition-next="slide-left"
-        flat
-        arrows
-        navigation
-        infinite
+      <div class="col-md"/>
+      <picture-slides
+        v-show="!($q.screen.lt.lg)"
+        class="col-lg-6"
+        :photos="photos"
       >
-        <q-carousel-slide
-          :name="1"
-          img-src="../../statics/scones.jpeg" style="background-size: cover"
-        >
-          <div class="absolute-top custom-caption">
-            <div class="text-h2">Lemon Scone</div>
-          </div>
-        </q-carousel-slide>
-        <q-carousel-slide
-          :name="2"
-          img-src="../../statics/rotating-photos/blueBerryPastries.jpeg"
-          style="background-size: cover"
-        >
-          <div class="absolute-top custom-caption">
-            <div class="text-h2">Blueberry Scone</div>
-          </div>
-        </q-carousel-slide>
-        <q-carousel-slide
-          :name="3"
-          img-src="../../statics/rotating-photos/orangePastries.png"
-          style="background-size: cover"
-        >
-          <div class="absolute-top custom-caption">
-            <div class="text-h2">Blueberry Scone</div>
-          </div>
-        </q-carousel-slide>
-      </q-carousel>
+        <template v-slot:picture-name1>Lemon Scone</template>
+        <template v-slot:picture-name2>Blueberry Scone</template>
+        <template v-slot:picture-name3>Blueberry Scone</template>
+      </picture-slides>
       <div class="col-md"></div>
     </div>
   </div>
@@ -83,14 +60,20 @@
 
 <script>
 import AddressComponent from './address-component';
+import PictureSlides from './picture-slides';
 
 export default {
   name: 'Bakery',
-  components: { AddressComponent },
+  components: { PictureSlides, AddressComponent },
   data() {
     return {
       slide: 1,
       slotNames: ['place', 'address', 'city'],
+      photos: [
+        '../../statics/scones.jpeg',
+        '../../statics/rotating-photos/blueBerryPastries.jpeg',
+        '../../statics/rotating-photos/orangePastries.png',
+      ],
       locations: [
         {
           name: 'Walmart',
@@ -98,7 +81,7 @@ export default {
           city: 'Honolulu, HI 96814',
         },
         {
-          name: 'Cultural Plaza',
+          name: 'Cultural Pa',
           street: '100 N Beretania St',
           city: 'Honolulu, HI 96817',
         },
@@ -120,6 +103,29 @@ export default {
       window.open(`https://www.google.com//maps?q=${this.locations[index].name} ${this.locations[index].street}, ${this.locations[index].city}`);
     },
   },
+  computed: {
+    resizableFont() {
+      return this.$q.screen.lt.sm ? 'font-size:17px;' : 'font-size:19px;';
+    },
+    resizableHeadersFont() {
+      return this.$q.screen.lt.sm ? 'font-size: 45px;' : '';
+    },
+    resizableMarginDescription() {
+      return this.$q.screen.sm || this.$q.screen.lt.sm ? 'q-mt-lg q-mx-xl anaheim' : 'q-mt-xl q-mx-xl anaheim';
+    },
+    resizableMarginCarousel() {
+      if (this.$q.screen.gt.sm && this.$q.screen.lt.lg) {
+        return 'col-sm-12 q-mt-lg q-mx-xl';
+      }
+      if (this.$q.screen.sm || this.$q.screen.lt.sm) {
+        return 'col-sm-12 q-mt-lg';
+      }
+      return 'col-sm-12 q-mt-xl';
+    },
+    resizableMarginAddresses() {
+      return this.$q.screen.sm || this.$q.screen.lt.sm ? 'col-md-6 col-sm-6 col-xs-11 q-mt-lg' : 'col-md-6 col-sm-6 col-xs-11 q-mb-sm';
+    },
+  },
 };
 </script>
 
@@ -129,11 +135,4 @@ export default {
     font-size:50px;
     letter-spacing: 2px
   }
-  .custom-caption {
-    text-align: center;
-    padding: 12px;
-    color: white;
-    background-color: rgba(0, 0, 0, .3);
-  }
-
 </style>
