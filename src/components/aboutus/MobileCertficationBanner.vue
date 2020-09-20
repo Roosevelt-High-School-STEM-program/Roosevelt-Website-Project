@@ -4,7 +4,7 @@
       class="col-xs-4"
       animated
       v-model="slide"
-      autoplay="true"
+      :autoplay="true"
       arrows
       infinite
     >
