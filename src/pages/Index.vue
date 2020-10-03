@@ -3,13 +3,13 @@
     <regular-opening-screen id="opening-screen" />
     <about id="about"/>
     <products id="brands" />
-    <regular-contact-us />
+    <contact-us />
   </q-page>
 </template>
 
 <script>
 import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
-import RegularContactUs from '../components/contactus/RegularContactUs';
+import ContactUs from '../components/contactus/ContactUs';
 import Products from '../pages/Products';
 import About from './About';
 
@@ -18,7 +18,7 @@ export default {
   components: {
     About,
     RegularOpeningScreen,
-    RegularContactUs,
+    ContactUs,
     Products,
   },
   methods: {
