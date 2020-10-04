@@ -9,7 +9,7 @@
         class="q-my-none text-weight-bold"
         style="font-size: 45px; letter-spacing: 2px;"
       >
-        About Us
+        Our Story
       </h1>
       <p
         :class="$q.screen.sm || $q.screen.lt.sm ? 'anaheim' : 'anaheim q-mt-sm'"

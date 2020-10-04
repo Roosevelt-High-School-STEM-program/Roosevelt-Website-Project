@@ -6,18 +6,20 @@
     <bakery class="col-md-12" />
     <!-- covert to a component -->
     <div class="q-mx-xl q-my-xl col black-border" />
-    <bakery class="col-md-12 q-mb-xl" />
-<!--    <hand-cut-produce class="col-md-12 col-md-12 q-mb-xl" />-->
+    <hand-cut-produce class="col-md-12 q-mb-xl" />
+
   </div>
 </template>
 
 <script>
 // import HandCutProduce from '../components/products/HandCutProduce';
 import Bakery from '../components/products/Bakery';
+import HandCutProduce from '../components/products/HandCutProduce';
 
 export default {
   name: 'Products',
   components: {
+    HandCutProduce,
     Bakery,
     // HandCutProduce,
   },

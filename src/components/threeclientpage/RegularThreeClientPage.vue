@@ -18,7 +18,7 @@
         class="col-4 q-pa-none"
         clickable
         v-ripple
-        style="background-image: url('../../statics/scones.jpeg'); background-size: cover;"
+        style="background-image: url('../../statics/rotating-photos/scones.jpeg'); background-size: cover;"
       >
         <div class="column justify-center image-cover">
           <q-item-section class="text-center col image-text">
@@ -30,7 +30,7 @@
         class="col-4 q-pa-none"
         clickable
         v-ripple
-        style="background-image: url('../../statics/scones.jpeg'); background-size: cover;"
+        style="background-image: url('../../statics/rotating-photos/scones.jpeg'); background-size: cover;"
       >
         <div class="column justify-center image-cover">
           <q-item-section class="text-center col image-text">
