@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-center">
-    <div class="col-md-4 col-sm-8 col-xs-12 q-mb-lg">
+    <div class="col-md-4 col-sm-8 col-xs-12 q-my-lg">
       <q-img src="../../src/statics/Products2.png"></q-img>
     </div>
     <bakery class="col-md-12" />
