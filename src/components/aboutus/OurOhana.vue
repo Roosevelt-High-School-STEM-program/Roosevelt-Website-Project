@@ -2,7 +2,7 @@
   <div class="row justify-center items-center col-md-12 col-xs-12 q-my-md bg-white q-mb-lg">
     <div class="col-md-3 col-xs-1" />
     <div class="col-md-3 col-xs-8 col-sm-6 q-mt-md">
-      <q-img src="../../statics/ourOhana2.png" />
+      <q-img src="../../statics/ourOhana.png" />
     </div>
     <div class="col-md-3 col-xs-1" />
     <div class="col-md-6 col-xs-11 q-mt-lg">
