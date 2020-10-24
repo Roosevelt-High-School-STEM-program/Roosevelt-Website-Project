@@ -26,7 +26,7 @@ export default {
 
 <style scoped>
   #front-page-image {
-    background-image: url('/statics/food-pictures/oatCake.JPG');
+    background-image: url('../../statics/food-pictures/oatCake.jpg');
     background-position: center;
     background-size: cover;
     min-height: 100%;

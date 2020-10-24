@@ -70,9 +70,9 @@ export default {
       slide: 1,
       slotNames: ['place', 'address', 'city'],
       photos: [
-        '../../statics/scones.jpeg',
-        '../../statics/rotating-photos/blueBerryPastries.jpeg',
-        '../../statics/rotating-photos/orangePastries.png',
+        'statics/rotating-photos/scones.jpg',
+        'statics/rotating-photos/blueBerryPastries.jpg',
+        'statics/rotating-photos/orangePastries.png',
       ],
       locations: [
         {
