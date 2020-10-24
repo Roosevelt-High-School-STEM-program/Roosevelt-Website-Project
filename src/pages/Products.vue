@@ -1,8 +1,9 @@
 <template>
   <div class="row justify-center">
-    <div class="col-md-4 col-sm-8 col-xs-12 q-mb-lg">
-      <q-img src="../../src/statics/Products2.png"></q-img>
-    </div>
+    <q-img
+      class="col-md-3 col-sm-5 col-xs-8 q-mb-lg"
+      src="../../src/statics/ourBrand.png"
+    />
     <bakery class="col-md-12" />
     <!-- covert to a component -->
     <div class="q-mx-xl q-my-xl col black-border" />

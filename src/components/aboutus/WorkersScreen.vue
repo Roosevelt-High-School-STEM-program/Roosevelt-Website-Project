@@ -1,11 +1,8 @@
 <template>
   <div class="row justify-center bg-white q-mb-lg">
-    <div class="row justify-center items-center col-md-12 col-xs-12 q-my-md">
-      <div class="col-md-3 col-xs-1" />
-      <div class="col-md-3 col-xs-8 col-sm-6 q-mt-md">
-        <q-img src="../../statics/Ohana2.png" />
-      </div>
-      <div class="col-md-3 col-xs-1" />
+    <div class="row justify-center col-md-12 col-xs-12 q-my-md">
+      <q-img class="col-md-3 col-xs-8 col-sm-5 q-mt-md" src="../../statics/Ohana2.png" />
+      <div class="col-12"></div>
       <div class="col-md-7 col-xs-11 q-my-lg">
         <q-img
           class="float-image"

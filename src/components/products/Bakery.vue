@@ -24,9 +24,9 @@ export default {
   data() {
     return {
       photos: [
-        '../../statics/rotating-photos/scones.jpeg',
+        '../../statics/rotating-photos/scones.jpg',
         '../../statics/rotating-photos/cake.jpg',
-        '../../statics/rotating-photos/cookies.jpg',
+        '../../statics/rotating-photos/upsideDownCake.png',
       ],
       locations: [
         {
