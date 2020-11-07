@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import ProductComponent from './product-component.';
+import ProductComponent from './product-component';
 
 export default {
   name: 'KakaakoEats',
