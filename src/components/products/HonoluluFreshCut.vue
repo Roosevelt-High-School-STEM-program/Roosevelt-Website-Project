@@ -3,11 +3,11 @@
     :locations="locations"
     :photos="photos"
   >
-    <template v-slot:product-title>Bakery</template>
+    <template v-slot:product-title>Honolulu Fresh Cut<sup>TM</sup></template>
     <template v-slot:product-description>
-      It is a long established fact that a reader will be distracted by
-      the readable content of a page when looking at its layout. The point of using Lorem I
-      psum is that it has a more-or-less normal distribution of letters, as opposed to using
+      Fresh prepared salads, fruits, and vegetables sold in local retail,
+      club, and convenience stores. We hand cut our produce which reduces the amount
+      of water left in the bowl so you get only the best fruits and veggies in our products.
     </template>
     <template v-slot:picture-name1>Lemon Scone</template>
     <template v-slot:picture-name2>Blueberry Scone</template>
@@ -19,7 +19,7 @@
 import ProductComponent from './product-component.';
 
 export default {
-  name: 'Bakery',
+  name: 'HonoululuFreshCut',
   components: { ProductComponent },
   data() {
     return {

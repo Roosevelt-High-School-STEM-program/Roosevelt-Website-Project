@@ -4,25 +4,25 @@
       class="col-md-3 col-sm-5 col-xs-8 q-mb-lg"
       src="../../src/statics/ourBrand.png"
     />
-    <bakery class="col-md-12" />
-    <!-- covert to a component -->
+    <honolulu-baking-company class="col-md-12" />
     <div class="q-mx-xl q-my-xl col black-border" />
-    <hand-cut-produce class="col-md-12 q-mb-xl" />
-
+    <honolulu-fresh-cut class="col-md-12" />
+    <div class="q-mx-xl q-my-xl col black-border" />
+    <kakaako-eats class="col-md-12 q-mb-xl" />
   </div>
 </template>
 
 <script>
-// import HandCutProduce from '../components/products/HandCutProduce';
-import Bakery from '../components/products/Bakery';
-import HandCutProduce from '../components/products/HandCutProduce';
+import HonoluluBakingCompany from '../components/products/HonoluluBakingCompany';
+import HonoluluFreshCut from '../components/products/HonoluluFreshCut';
+import KakaakoEats from '../components/products/KakaakoEats';
 
 export default {
   name: 'Products',
   components: {
-    HandCutProduce,
-    Bakery,
-    // HandCutProduce,
+    HonoluluBakingCompany,
+    KakaakoEats,
+    HonoluluFreshCut,
   },
 };
 </script>
