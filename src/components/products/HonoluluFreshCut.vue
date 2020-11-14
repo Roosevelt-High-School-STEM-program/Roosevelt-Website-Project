@@ -1,6 +1,5 @@
 <template>
   <product-component
-    :locations="locations"
     :photos="photos"
   >
     <template v-slot:product-title>Honolulu Fresh Cut<sup>TM</sup></template>
@@ -24,9 +23,9 @@ export default {
   data() {
     return {
       photos: [
-        '../../statics/rotating-photos/scones.jpg',
-        '../../statics/rotating-photos/cake.jpg',
-        '../../statics/rotating-photos/upsideDownCake.png',
+        '../../statics/food-pictures/fresh-cut/pasta.jpg',
+        '../../statics/food-pictures/fresh-cut/assorted-fruits.png',
+        '../../statics/food-pictures/fresh-cut/pineapple.jpg',
       ],
       locations: [
         {

@@ -12,38 +12,40 @@
     infinite
   >
     <q-carousel-slide
-      :name="1"
-      :img-src="photos[0]"
+      v-for="(x, index) in photos"
+      :key="index+fixIndex"
+      :name="index+fixIndex"
+      :img-src="x"
       style="background-size: cover"
     >
-      <div class="absolute-top custom-caption text-weight-bold">
-        <div :class="resizableHeader">
-          <slot name="picture-name1" />
-        </div>
-      </div>
+<!--      <div class="absolute-top custom-caption text-weight-bold">-->
+<!--        <div :class="resizableHeader">-->
+<!--          <slot name="picture-name1" />-->
+<!--        </div>-->
+<!--      </div>-->
     </q-carousel-slide>
-    <q-carousel-slide
-      :name="2"
-      :img-src="photos[1]"
-      style="background-size: cover"
-    >
-      <div class="absolute-top custom-caption">
-        <div :class="resizableHeader">
-          <slot name="picture-name2" />
-        </div>
-      </div>
-    </q-carousel-slide>
-    <q-carousel-slide
-      :name="3"
-      :img-src="photos[2]"
-      style="background-size: cover"
-    >
-      <div class="absolute-top custom-caption">
-        <div :class="resizableHeader">
-          <slot name="picture-name3" />
-        </div>
-      </div>
-    </q-carousel-slide>
+<!--    <q-carousel-slide-->
+<!--      :name="2"-->
+<!--      :img-src="photos[1]"-->
+<!--      style="background-size: cover"-->
+<!--    >-->
+<!--      <div class="absolute-top custom-caption">-->
+<!--        <div :class="resizableHeader">-->
+<!--          <slot name="picture-name2" />-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </q-carousel-slide>-->
+<!--    <q-carousel-slide-->
+<!--      :name="3"-->
+<!--      :img-src="photos[2]"-->
+<!--      style="background-size: cover"-->
+<!--    >-->
+<!--      <div class="absolute-top custom-caption">-->
+<!--        <div :class="resizableHeader">-->
+<!--          <slot name="picture-name3" />-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </q-carousel-slide>-->
   </q-carousel>
 </template>
 
@@ -58,6 +60,7 @@ export default {
   },
   data() {
     return {
+      fixIndex: 1,
       slide: 1,
     };
   },
@@ -67,9 +70,9 @@ export default {
         return 'height: 450px;';
       }
       if (this.$q.screen.lt.sm || this.$q.screen.sm) {
-        return 'height: 320px';
+        return '';
       }
-      return 'height: 550px';
+      return 'height: 450px; width:740px';
     },
     resizableHeader() {
       return this.$q.screen.lt.sm ? 'text-h4' : 'text-h3';
@@ -79,11 +82,11 @@ export default {
 </script>
 
 <style scoped>
-  .custom-caption {
-    text-align: center;
-    padding: 12px;
-    color: white;
-    background-color: rgba(0, 0, 0, .3);
-    font-family: Alegreya Sans SC, cursive;
-  }
+  /*.custom-caption {*/
+  /*  text-align: center;*/
+  /*  padding: 12px;*/
+  /*  color: white;*/
+  /*  background-color: rgba(0, 0, 0, .3);*/
+  /*  font-family: Alegreya Sans SC, cursive;*/
+  /*}*/
 </style>

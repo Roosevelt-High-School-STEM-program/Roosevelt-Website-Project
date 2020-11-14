@@ -1,6 +1,5 @@
 <template>
   <product-component
-    :locations="locations"
     :photos="photos"
   >
     <template v-slot:product-title>Honolulu Baking Company</template>
@@ -29,28 +28,28 @@ export default {
         '../../statics/rotating-photos/cake.jpg',
         '../../statics/rotating-photos/upsideDownCake.png',
       ],
-      locations: [
-        {
-          name: 'Walmart',
-          street: '700 Ke’eaumoku St',
-          city: 'Honolulu, HI 96814',
-        },
-        {
-          name: 'Cultural Pa',
-          street: '100 N Beretania St',
-          city: 'Honolulu, HI 96817',
-        },
-        {
-          name: 'Cultural Plaza',
-          street: '100 N Beretania St',
-          city: 'Honolulu, HI 96817',
-        },
-        {
-          name: 'Cultural Plaza',
-          street: '100 N Beretania St',
-          city: 'Honolulu, HI 96817',
-        },
-      ],
+      // locations: [
+      //   {
+      //     name: 'Walmart',
+      //     street: '700 Ke’eaumoku St',
+      //     city: 'Honolulu, HI 96814',
+      //   },
+      //   {
+      //     name: 'Cultural Pa',
+      //     street: '100 N Beretania St',
+      //     city: 'Honolulu, HI 96817',
+      //   },
+      //   {
+      //     name: 'Cultural Plaza',
+      //     street: '100 N Beretania St',
+      //     city: 'Honolulu, HI 96817',
+      //   },
+      //   {
+      //     name: 'Cultural Plaza',
+      //     street: '100 N Beretania St',
+      //     city: 'Honolulu, HI 96817',
+      //   },
+      // ],
     };
   },
 };

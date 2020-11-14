@@ -5,9 +5,9 @@
       src="../../src/statics/ourBrand.png"
     />
     <honolulu-baking-company class="col-md-12" />
-    <div class="q-mx-xl q-my-xl col black-border" />
+    <div v-show="!this.$q.screen.lt.lg" class="q-mx-xl q-my-xl col black-border" />
     <honolulu-fresh-cut class="col-md-12" />
-    <div class="q-mx-xl q-my-xl col black-border" />
+    <div v-show="!this.$q.screen.lt.lg" class="q-mx-xl q-my-xl col black-border" />
     <kakaako-eats class="col-md-12 q-mb-xl" />
   </div>
 </template>
