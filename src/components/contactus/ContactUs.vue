@@ -46,7 +46,7 @@
               class="q-ma-sm text-weight-medium"
               :style="ResponsiveInformation"
             >
-              (808) 596-8415
+              (808) 425-0937
             </p>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
