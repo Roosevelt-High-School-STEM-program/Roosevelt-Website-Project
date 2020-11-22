@@ -95,7 +95,7 @@ export default {
   },
   computed: {
     resizableFont() {
-      return this.$q.screen.lt.sm ? 'font-size:17px;' : 'font-size:19px;';
+      return this.$q.screen.lt.sm ? 'font-size:17px;' : 'font-size:20px;';
     },
     resizableHeadersFont() {
       return this.$q.screen.lt.sm ? 'font-size: 45px;' : '';

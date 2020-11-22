@@ -24,8 +24,8 @@ export default {
   data() {
     return {
       photos: [
-        '../../statics/food-pictures/kakaako/pastry.jpg',
-        '../../statics/food-pictures/kakaako/pie.jpg',
+        'statics/food-pictures/kakaako/pastry.jpg',
+        'statics/food-pictures/kakaako/pie.jpg',
       ],
       // locations: [
       //   {

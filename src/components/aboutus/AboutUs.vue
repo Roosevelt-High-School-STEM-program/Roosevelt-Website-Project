@@ -13,7 +13,7 @@
       </h1>
       <p
         :class="$q.screen.sm || $q.screen.lt.sm ? 'anaheim' : 'anaheim q-mt-sm'"
-        :style="$q.screen.lt.sm ? 'font-size:17px;' : 'font-size:19px;'"
+        :style="$q.screen.lt.sm ? 'font-size:17px;' : 'font-size:20px;'"
       >
         In 1997, we began our journey as the primary food supplier for local
         Starbucks stores in Hawaii. Today, we offer a wide variety of sweet

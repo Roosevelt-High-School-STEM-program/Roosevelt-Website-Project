@@ -104,9 +104,9 @@ module.exports = function (ctx) {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {}, // only for NON InjectManifest
       manifest: {
-        // name: 'roosevelt-website-project',
-        // short_name: 'roosevelt-website-project',
-        // description: 'A Quasar Framework app',
+        name: 'Honoulu Baking Company',
+        short_name: 'Honoulu Baking Company',
+        description: 'Honolulu Baking Comapny Website',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -173,7 +173,7 @@ module.exports = function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        // appId: 'roosevelt-website-project'
+        // appId: 'Honoulu Baking Company'
       },
 
       // keep in sync with /src-electron/main-process/electron-main

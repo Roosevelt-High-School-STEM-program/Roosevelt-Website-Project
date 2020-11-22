@@ -26,15 +26,15 @@
               label="ORDER ONLINE"
               name="ORDER ONLINE"
             />
-<!--            <q-btn-->
-<!--              style="letter-spacing: 3px;"-->
-<!--              size="14px"-->
-<!--              flat-->
-<!--              class="float q-pa-sm text-weight-bold"-->
-<!--              @click="teleport('#brands')"-->
-<!--              label="OUR BRANDS"-->
-<!--              name="OUR BRANDS"-->
-<!--            />-->
+            <q-btn
+              style="letter-spacing: 3px;"
+              size="14px"
+              flat
+              class="float q-pa-sm text-weight-bold"
+              @click="teleport('#brands')"
+              label="OUR BRANDS"
+              name="OUR BRANDS"
+            />
             <q-btn
               style="letter-spacing: 3px;"
               size="14px"
@@ -78,7 +78,7 @@ export default {
       drawer: false,
       navigationNames: [
         'OUR STORY',
-        // 'OUR BRANDS',
+        'OUR BRANDS',
         'ORDER ONLINE',
       ],
       navigationId: [

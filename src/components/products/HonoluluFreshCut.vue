@@ -23,9 +23,9 @@ export default {
   data() {
     return {
       photos: [
-        '../../statics/food-pictures/fresh-cut/pasta.jpg',
-        '../../statics/food-pictures/fresh-cut/assorted-fruits.png',
-        '../../statics/food-pictures/fresh-cut/pineapple.jpg',
+        'statics/food-pictures/fresh-cut/pasta.jpg',
+        'statics/food-pictures/fresh-cut/assorted-fruits.png',
+        'statics/food-pictures/fresh-cut/pineapple.jpg',
       ],
       locations: [
         {
