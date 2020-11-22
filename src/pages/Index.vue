@@ -1,14 +1,14 @@
 <template>
   <q-page>
-    <regular-opening-screen id="opening-screen" />
+    <navigation-bar id="opening-screen" />
     <about id="about"/>
-    <products id="brands" />
+    <products class="q-mt-lg" id="brands" />
     <contact-us />
   </q-page>
 </template>
 
 <script>
-import RegularOpeningScreen from '../components/openingscreen/RegularOpeningScreen';
+import NavigationBar from '../components/navigationBar';
 import ContactUs from '../components/contactus/ContactUs';
 import Products from '../pages/Products';
 import About from './About';
@@ -17,33 +17,23 @@ export default {
   name: 'Index',
   components: {
     About,
-    RegularOpeningScreen,
+    NavigationBar,
     ContactUs,
     Products,
   },
   methods: {
     scrollTo(select) {
-      // length of the var too long
       const divPosition = document.querySelector(select).getBoundingClientRect().top
           + window.scrollY;
-      if (divPosition < 0) {
+      if (this.$q.screen.lt.sm) {
+        console.log('fuck');
         window.scroll({
-          top: divPosition,
-          behavior: 'smooth',
-        });
-      } else if (this.$q.screen.sm) {
-        window.scroll({
-          top: divPosition - 65,
-          behavior: 'smooth',
-        });
-      } else if (this.$q.screen.lt.sm) {
-        window.scroll({
-          top: divPosition - 210,
+          top: divPosition - 160,
           behavior: 'smooth',
         });
       } else {
         window.scroll({
-          top: divPosition - 52,
+          top: divPosition,
           behavior: 'smooth',
         });
       }

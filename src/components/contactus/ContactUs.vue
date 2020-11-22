@@ -14,8 +14,8 @@
             CONTACT INFO
           </h1>
         </div>
-        <div class="col-md-8 col-sm-12 col-xs-12 col-lg-7 row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="col-md-9 col-sm-12 col-xs-12 col-lg-7 row">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="row justify-center items-center">
               <q-icon name="place" :size="ResponsiveIcon" />
               <p
@@ -32,7 +32,7 @@
               523 Ahui St, Honolulu, HI 96813
             </p>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="row justify-center items-center">
               <q-icon name="phone" :size="ResponsiveIcon" />
               <p
@@ -46,14 +46,20 @@
               class="q-ma-sm text-weight-medium"
               :style="ResponsiveInformation"
             >
-              (808) 425-0937
+              (808) 596-2556
             </p>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <div class="row justify-center items-center">
-              <q-icon name="img:../../statics/instagramGlyphLogo.png" :size="ResponsiveIcon" />
+              <q-icon
+                class="icon-hover"
+                @click="toInstagram"
+                name="img:../../statics/instagramGlyphLogo.png"
+                :size="ResponsiveIcon"
+              />
               <p
-                class="q-ma-sm text-weight-bold contact-info no-hightlight"
+                @click="toInstagram"
+                class="q-ma-sm text-weight-bold contact-info no-hightlight icon-hover"
                 :style="ResponsiveInformationTitle"
               >
                 Instagram
@@ -66,6 +72,29 @@
               @OriginalHawaiiOatCake
             </p>
           </div>
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="row justify-center items-center">
+              <q-icon
+                class="icon-hover"
+                @click="toFacebook"
+                name="img:../../statics/f_logo_RGB-White_58.png"
+                :size="ResponsiveIcon"
+              />
+              <p
+                @click="toFacebook"
+                class="q-ma-sm text-weight-bold contact-info no-hightlight icon-hover"
+                :style="ResponsiveInformationTitle"
+              >
+                Facebook
+              </p>
+            </div>
+            <p
+              class="q-ma-sm text-weight-medium"
+              :style="ResponsiveInformation"
+            >
+              Honolulu Baking Company
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -75,6 +104,14 @@
 <script>
 export default {
   name: 'ContactUs',
+  methods: {
+    toInstagram() {
+      window.open('https://www.instagram.com/originalhawaiioatcake/');
+    },
+    toFacebook() {
+      window.open('https://www.facebook.com/originalhawaiioatcake/');
+    },
+  },
   computed: {
     ResponsiveContactInfoTitleStyle() {
       return this.$q.screen.lt.sm ? 'font-size: 53px' : '';
@@ -83,7 +120,7 @@ export default {
       return this.$q.screen.lt.sm || this.$q.screen.sm ? 'col-md-12 col-xs-12 row items-center justify-center' : 'col-md-12 col-xs-12';
     },
     ResponsiveInformation() {
-      return this.$q.screen.lt.sm ? 'font-size:13px' : 'font-size: 17px';
+      return this.$q.screen.lt.sm ? 'font-size:14px' : 'font-size: 17px';
     },
     ResponsiveInformationTitle() {
       return this.$q.screen.lt.sm ? 'font-size:17px' : '';
@@ -92,7 +129,7 @@ export default {
       return this.$q.screen.lt.sm ? '16px' : '20px';
     },
     ResponsiveContactPageSize() {
-      return this.$q.screen.lt.sm ? 'height: 350px; background-color: rgba(20, 15, 15, 0.7);padding-bottom:30px' : 'height: 325px; background-color: rgba(20, 15, 15, 0.7);';
+      return this.$q.screen.lt.sm ? 'height: 430px; background-color: rgba(20, 15, 15, 0.7);padding-bottom:30px' : 'height: 325px; background-color: rgba(20, 15, 15, 0.7);';
     },
   },
 };
@@ -111,5 +148,8 @@ export default {
     font-family: Alegreya Sans SC;
     letter-spacing: 2px;
     font-size:90px
+  }
+  .icon-hover {
+    cursor: pointer;
   }
 </style>
