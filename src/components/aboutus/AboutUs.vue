@@ -29,7 +29,7 @@
     <div class="col-md-2" />
     <div
       :class="$q.screen.sm || $q.screen.lt.sm ?
-        'row justify-center col-xs-8 col-sm-12 order-first q-mt-lg' : 'col-md-3 '"
+        'row justify-center col-xs-8 col-sm-12 order-first q-mt-lg' : 'row col-md-3 justify-center'"
     >
       <q-img
         class="float-image"

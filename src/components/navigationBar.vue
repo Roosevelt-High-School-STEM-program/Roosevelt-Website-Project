@@ -8,15 +8,16 @@
     </div>
     <div class="col-md-8"/>
     <div class="col-md-4" v-show="$q.screen.sm || $q.screen.gt.sm" style="width:100%">
-      <q-btn
-        style="letter-spacing: 3px;"
-        size="14px"
-        flat
-        class="float q-pa-sm text-weight-bold"
-        @click="delivery"
-        label="ORDER ONLINE"
-        name="ORDER ONLINE"
-      />
+      <!-- WIP TODO add online ordering-->
+      <!--      <q-btn-->
+<!--        style="letter-spacing: 3px;"-->
+<!--        size="14px"-->
+<!--        flat-->
+<!--        class="float q-pa-sm text-weight-bold"-->
+<!--        @click="delivery"-->
+<!--        label="ORDER ONLINE"-->
+<!--        name="ORDER ONLINE"-->
+<!--      />-->
       <q-btn
         style="letter-spacing: 3px;"
         size="14px"
@@ -44,7 +45,7 @@
         <q-item-section
           class="text-weight-bold text-center"
           style="letter-spacing: 3px; font-size: 14px"
-          @click="name != 'ORDER ONLINE' ? teleport('#' + navigationId[index]) : delivery()"
+          @click="teleport('#' + navigationId[index])"
         >
           {{ name }}
         </q-item-section>
@@ -61,7 +62,6 @@ export default {
       navigationNames: [
         'OUR STORY',
         'OUR BRANDS',
-        'ORDER ONLINE',
       ],
       navigationId: [
         'about',
@@ -74,9 +74,9 @@ export default {
       this.drawer = false;
       this.$root.$emit('on-submit', select);
     },
-    delivery() {
-      window.open('https://www.grubhub.com/restaurant/honolulu-baking-company-523-ahui-st-honolulu/2048001');
-    },
+    // delivery() {
+    //   window.open('https://www.grubhub.com/restaurant/honolulu-baking-company-523-ahui-st-honolulu/2048001');
+    // },
   },
   computed: {
     responsiveLogo() {

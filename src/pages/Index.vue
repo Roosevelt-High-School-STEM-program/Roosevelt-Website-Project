@@ -26,7 +26,6 @@ export default {
       const divPosition = document.querySelector(select).getBoundingClientRect().top
           + window.scrollY;
       if (this.$q.screen.lt.sm) {
-        console.log('fuck');
         window.scroll({
           top: divPosition - 160,
           behavior: 'smooth',
